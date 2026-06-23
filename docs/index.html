@@ -3,219 +3,782 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio | nexo-tech</title>
-    <meta name="description" content="Tecnología, creatividad y Android — curado por IA">
-    <meta property="og:title" content="Inicio">
-    <meta property="og:description" content="Tecnología, creatividad y Android — curado por IA">
-    <meta property="og:type" content="article">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>nexo-tech — AI + Tech + Android + Monetización 2026</title>
+    <meta name="description" content="Plataforma de tech, IA, creatividad, Android y monetización de proyectos. Curado por Hermes Agent desde $0 en Termux.">
+    <meta property="og:title" content="nexo-tech">
+    <meta property="og:description" content="Tech + IA + Android + Monetización. Sin costo, puro Android.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-    <nav class="nav">
-        <a href="/" class="logo">nexo<span>tech</span></a>
-        <div class="nav-links">
-            <a href="/#tech">Tech</a>
-            <a href="/#ai">IA</a>
-            <a href="/#creative">Creative</a>
-            <a href="/#android">Android</a>
-        </div>
-    </nav>
-    
-    <main>
-        
-    <section class="hero">
-        <h1>nexo<span>tech</span></h1>
-        <p>Tecnología, creatividad y Android — curado por IA</p>
-        <p class="subtitle">Hecho desde un teléfono Android con costo $0</p>
-    </section>
-    
-    <section class="stats">
-        <div class="stat">
-            <div class="num">10</div>
-            <div class="label">Artículos hoy</div>
-        </div>
-        <div class="stat">
-            <div class="num">2</div>
-            <div class="label">Categorías</div>
-        </div>
-        <div class="stat">
-            <div class="num">4</div>
-            <div class="label">Fuentes</div>
-        </div>
-    </section>
-    
-    <section class="chart-section">
-        <h2>📊 Distribución por categoría</h2>
-        
-    <div class="chart-container">
-        <canvas id="categoryChart"></canvas>
-    </div>
-    <script>
-    new Chart(document.getElementById('categoryChart'), {
-        type: 'doughnut',
-        data: {
-            labels: ["Tech", "IA/ML"],
-            datasets: [{
-                data: [8, 2],
-                backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: { position: 'bottom', labels: { color: '#ccc' } }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #667eea;
+            --primary-dark: #764ba2;
+            --accent: #f093fb;
+            --danger: #ff0055;
+            --success: #00ff88;
+            --warning: #ffaa00;
+            --info: #00ccff;
+            --dark: #0a0e27;
+            --dark-secondary: #1a1f3a;
+            --dark-tertiary: #2d3561;
+            --light: #e8e9f3;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, var(--dark) 0%, #1a0e3a 100%);
+            color: var(--light);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 14, 39, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(102, 126, 234, 0.2);
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .badge {
+            background: var(--danger);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* HERO */
+        .hero {
+            margin-top: 80px;
+            padding: 100px 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(240, 147, 251, 0.1) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -5%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(240, 147, 251, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(30px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent), var(--success));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            color: var(--light);
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .hero .subtitle {
+            font-size: 1.1em;
+            color: var(--info);
+            opacity: 0.8;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1em;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 48px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--light);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* FEATURES */
+        .features {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            font-weight: 900;
+            margin-bottom: 3rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, var(--dark-secondary) 0%, var(--dark-tertiary) 100%);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .feature-card:hover::before {
+            left: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 0.5rem;
+            color: var(--light);
+        }
+
+        .feature-card p {
+            color: rgba(232, 233, 243, 0.7);
+            font-size: 0.95em;
+        }
+
+        /* STATS */
+        .stats {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 60px 2rem;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(240, 147, 251, 0.1) 100%);
+            border-radius: 12px;
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item h2 {
+            font-size: 3em;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            color: var(--light);
+            font-weight: 500;
+        }
+
+        /* SHOWCASE */
+        .showcase {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 2rem;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .article-card {
+            background: linear-gradient(135deg, var(--dark-secondary) 0%, var(--dark-tertiary) 100%);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .article-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+        }
+
+        .article-header {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(240, 147, 251, 0.1) 100%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-badge {
+            background: var(--primary);
+            color: white;
+            padding: 0.35rem 0.85rem;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+
+        .trend-badge {
+            background: var(--danger);
+            color: white;
+            padding: 0.35rem 0.85rem;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            animation: pulse 2s infinite;
+        }
+
+        .article-card h3 {
+            padding: 1.5rem;
+            font-size: 1.1em;
+            color: var(--light);
+            line-height: 1.5;
+        }
+
+        .article-card p {
+            padding: 0 1.5rem;
+            color: rgba(232, 233, 243, 0.7);
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .article-footer {
+            padding: 1rem 1.5rem;
+            border-top: 1px solid rgba(102, 126, 234, 0.2);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85em;
+            color: rgba(232, 233, 243, 0.5);
+        }
+
+        /* CHART */
+        .chart-section {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 2rem;
+            background: linear-gradient(135deg, var(--dark-secondary) 0%, var(--dark-tertiary) 100%);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 12px;
+            padding: 3rem 2rem;
+        }
+
+        .chart-container {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        /* CTA SECTION */
+        .cta-section {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 60px 2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 50%, var(--accent) 100%);
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
+        }
+
+        .cta-section h2 {
+            font-size: 2em;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.1em;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 100px;
+            padding: 40px 2rem;
+            background: linear-gradient(135deg, var(--dark-secondary) 0%, var(--dark-tertiary) 100%);
+            border-top: 1px solid rgba(102, 126, 234, 0.3);
+            text-align: center;
+            color: rgba(232, 233, 243, 0.7);
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: var(--accent);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            nav {
+                gap: 1rem;
+                font-size: 0.9em;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
             }
         }
-    });
-    </script>
-    
-    </section>
-    
-    <section class="articles">
-        <h2>🔥 Últimas noticias</h2>
-        <div class="card-grid">
-            
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">OpenAI Launches Full-Scale Effort to Patch Open-Source Bugs as It Takes on Anthropic’s Mythos</a></h2>
-    <p>Amid concerns about AI models’ cybersecurity capabilities, OpenAI revealed an improved version of GPT-5.5-Cyber and its “Patch the Planet” initiative to fix open-source software bugs.</p>
-    <div class="card-footer">
-        <span>wired</span>
-        <span>Mon, 22 Jun 2026</span>
-    </div>
-</div>
 
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Nous Research's NousCoder-14B is an open-source coding model landing right in the Claude Code moment</a></h2>
-    <p>Nous Research, the open-source artificial intelligence startup backed by crypto venture firm Paradigm, released a new competitive programming model on Monday that it says matches or exceeds several la</p>
-    <div class="card-footer">
-        <span>venturebeat_ai</span>
-        <span>Wed, 07 Jan 2026</span>
-    </div>
-</div>
+        /* ANIMATIONS */
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">SpaceX inks compute deal with Reflection AI, an open source AI lab</a></h2>
-    <p>Reflection AI will pay $150 million a month beginning July 1, 2026 through 2029 for immediate access to Nvidia's latest GB300 AI chips and supporting hardware across SpaceX's Colossus 2 data center ne</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Mon, 22 Jun 2026</span>
-    </div>
-</div>
+        .animate-in {
+            animation: slideInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-wifi"></i>
+                nexo<span>tech</span>
+                <span class="badge">LIVE</span>
+            </div>
+            <nav>
+                <a href="#features">🤖 Features</a>
+                <a href="#proyectos">📦 Proyectos</a>
+                <a href="#monetizacion">💰 Monetización</a>
+                <a href="https://github.com/oficinabarreal" target="_blank">💻 GitHub</a>
+            </nav>
+        </div>
+    </header>
 
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">HaloBraid raises $7M from Seven Seven Six to end the six-hour hair salon appointment</a></h2>
-    <p>HaloBraid aims to help salons speed up braiding with its first device, slated to launch later this year, that acts as a braiding assistant for professional stylists.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Tue, 23 Jun 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Fika Jobs raises $4M to build a video-first hiring platform where AI agents interview candidates</a></h2>
-    <p>Stockholm-based startup Fika Jobs is building a video-first hiring platform that combines AI interview agents with short-form video profiles, creating something that feels like a cross between LinkedI</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Tue, 23 Jun 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">OpenAI launches new initiative to help find and patch open source bugs</a></h2>
-    <p>OpenAI is using AI to help the open source community better protect itself.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Tue, 23 Jun 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">A new unpatchable flaw in Apple chips opens the door to an iPhone jailbreak</a></h2>
-    <p>European offensive cybersecurity company Paradigm Shift released details of a flaw and a technique to exploit it that opens the door for hackers to unlock and break into older iPhones.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Mon, 22 Jun 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Amazon is testing Alexa+ in India with Hindi support</a></h2>
-    <p>Amazon is planning to increase the footprint of its new conversational AI assistant Alexa+ to India and is inviting users in the country to test out a Hindi-language version.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Mon, 22 Jun 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">The Oura Ring 4 is as low as $226 for Prime Day</a></h2>
-    <p>Yes, the Oura Ring 5 just launched. But if you’re looking for a bargain and don’t mind a slightly thicker smart ring, then copping the last-gen Oura Ring 4 is still a smart and savvy move. Especially </p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-06-23T09:30</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">My go-to Kindle is back at its best price yet for Prime Day</a></h2>
-    <p>If you’ve been thinking about picking up a Kindle, Amazon’s Prime Day sale is a great time to do it. The retailer is currently offering steep discounts on several of its e-readers, including the lates</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-06-23T09:00</span>
-    </div>
-</div>
-
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content animate-in">
+            <h1>nexotech</h1>
+            <p>🤖 IA + 🎨 Creatividad + 🤖 Android + 💰 Monetización</p>
+            <p class="subtitle">Tech news curado por Hermes Agent desde Termux · Costo $0</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="window.location.href='#proyectos'">
+                    <i class="fas fa-rocket"></i> Ver Proyectos
+                </button>
+                <button class="btn btn-secondary" onclick="window.location.href='#monetizacion'">
+                    <i class="fas fa-dollar-sign"></i> Monetizar
+                </button>
+            </div>
         </div>
     </section>
-    
-    </main>
-    
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+        <h2 class="section-title">🚀 ¿Qué es nexotech?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📰</div>
+                <h3>Tech News en Vivo</h3>
+                <p>Últimas noticias de IA, startups y tecnología, curadas por Hermes Agent en tiempo real.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Monetización de Proyectos</h3>
+                <p>Aprende a ganar dinero con tus proyectos open-source, APIs y servicios desde cero.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔗</div>
+                <h3>Ecosistema de Herramientas</h3>
+                <p>Explora: Rancho Raíz CRM, Terror Visual Pipeline, Content Gen API y más.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Android + Termux</h3>
+                <p>Todo desarrollado en Android sin costo. Prueba que cualquier idea se puede ejecutar.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <h3>Zero-Cost Hosting</h3>
+                <p>GitHub Pages, Render, Vercel, Cloudflare. Hospeda sin pagar un peso.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤝</div>
+                <h3>Colabora & Gana</h3>
+                <p>Únete como developer, sponsor, o affiliate. Tenemos 6+ modelos de monetización.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+        <div class="stat-item">
+            <h2>4</h2>
+            <p>Proyectos Activos</p>
+        </div>
+        <div class="stat-item">
+            <h2>$0</h2>
+            <p>Costo de Infraestructura</p>
+        </div>
+        <div class="stat-item">
+            <h2>∞</h2>
+            <p>Potencial de Monetización</p>
+        </div>
+        <div class="stat-item">
+            <h2>100%</h2>
+            <p>Open Source</p>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="showcase" id="proyectos">
+        <h2 class="section-title">📦 Proyectos en Auge</h2>
+        <div class="cards-grid">
+            <div class="article-card">
+                <div class="article-header">
+                    <span class="category-badge">CRM</span>
+                    <span class="trend-badge">🔥 Production</span>
+                </div>
+                <h3>🏔️ Rancho Raíz Zira CRM</h3>
+                <p>Sistema de gestión inteligente para posadas rurales. Automatización de ventas, WhatsApp integrado, Google Sheets CMS.</p>
+                <div class="article-footer">
+                    <span>Python + GitHub Actions</span>
+                    <span><a href="https://github.com/oficinabarreal/rancho-raiz-zira" target="_blank">Ver →</a></span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-header">
+                    <span class="category-badge">VFX</span>
+                    <span class="trend-badge">🔥 Trending</span>
+                </div>
+                <h3>🎃 Terror Visual Pipeline</h3>
+                <p>WebGL + Three.js + Audio reactivo. Generación procedural de contenido visual de terror. 20 demos interactivas.</p>
+                <div class="article-footer">
+                    <span>HTML5 + WebGL</span>
+                    <span><a href="https://github.com/oficinabarreal/terror-visual-pipeline" target="_blank">Ver →</a></span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-header">
+                    <span class="category-badge">API</span>
+                    <span class="trend-badge">🚀 Launching</span>
+                </div>
+                <h3>🎬 Content Generation API</h3>
+                <p>Genera videos de marketing automáticamente. API para agencias. Revenue share en comisiones por generación.</p>
+                <div class="article-footer">
+                    <span>FastAPI + FFmpeg</span>
+                    <span><a href="#" target="_blank">Coming Soon →</a></span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-header">
+                    <span class="category-badge">Framework</span>
+                    <span class="trend-badge">💡 Concepto</span>
+                </div>
+                <h3>🤖 Hermes Agent Framework</h3>
+                <p>Framework open-source para multi-agentes IA en Termux/Android. Ejecuta en tu teléfono sin servidor.</p>
+                <div class="article-footer">
+                    <span>Python + LangChain</span>
+                    <span><a href="#" target="_blank">Roadmap →</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MONETIZACIÓN -->
+    <section class="showcase" id="monetizacion">
+        <h2 class="section-title">💰 Modelos de Monetización</h2>
+        <div class="cards-grid">
+            <div class="article-card">
+                <div class="article-header">
+                    <span class="category-badge">Developer</span>
+                    <span class="trend-badge">30% Comisión</span>
+                </div>
+                <h3>💻 Para Developers</h3>
+                <p>Desarrolla features, gana 30% comisión perpetua. Referidos: 15% MRR. Custom projects: $500-2K.</p>
+                <div class="article-footer">
+                    <span>Activo</span>
+                    <span><a href="https://github.com/oficinabarreal/rancho-raiz-zira/blob/main/CONTRIBUTING.md" target="_blank">Ver →</a></span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-header">
+                    <span class="category-badge">Agency</span>
+                    <span class="trend-badge">$500/mes</span>
+                </div>
+                <h3>🏢 Para Agencias</h3>
+                <p>White-label desde $999/mes. Implementa en tus clientes. Margen bruto 60%+.</p>
+                <div class="article-footer">
+                    <span>Activo</span>
+                    <span><a href="https://github.com/oficinabarreal/rancho-raiz-zira/blob/main/CONTRIBUTING.md" target="_blank">Ver →</a></span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-header">
+                    <span class="category-badge">Creator</span>
+                    <span class="trend-badge">20% Comisión</span>
+                </div>
+                <h3>📸 Content Creators</h3>
+                <p>Afiliado: 20% comisión. Embajador: $300/mes + comisiones. Co-branded: $500-1K.</p>
+                <div class="article-footer">
+                    <span>Activo</span>
+                    <span><a href="https://github.com/oficinabarreal/terror-visual-pipeline/blob/main/CONTRIBUTING.md" target="_blank">Ver →</a></span>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-header">
+                    <span class="category-badge">Sponsor</span>
+                    <span class="trend-badge">$25+/mes</span>
+                </div>
+                <h3>⭐ Sponsors</h3>
+                <p>Bronze, Silver, Gold, Platinum tiers. Logo en repos. Visibilidad garantizada.</p>
+                <div class="article-footer">
+                    <span>Activo</span>
+                    <span><a href="https://github.com/sponsors/oficinabarreal" target="_blank">Ver →</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <h2>🚀 Listo para monetizar tu idea?</h2>
+        <p>Únete al ecosistema nexotech y comienza a ganar hoy</p>
+        <div class="cta-buttons">
+            <button class="btn btn-primary" onclick="window.open('https://wa.me/5491159595869')">
+                <i class="fas fa-whatsapp"></i> Contacta Ahora
+            </button>
+            <button class="btn btn-secondary" onclick="window.open('https://github.com/oficinabarreal')" style="background: rgba(255,255,255,0.1); border-color: white; color: white;">
+                <i class="fas fa-github"></i> GitHub
+            </button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <p>Hecho con costo $0 desde un Android con Termux</p>
-        <p>Contenido curado por <a href="https://github.com/oficinabarreal">Hermes Agent</a></p>
+        <p>🏔️ nexotech — Tecnología, creatividad y Android sin límite de costos</p>
+        <p>Curado por <a href="https://github.com/oficinabarreal">Hermes Agent</a> desde Termux/Android · Costo $0 · 2026</p>
+        <p style="margin-top: 2rem; font-size: 0.9em;">
+            <a href="https://github.com/oficinabarreal/rancho-raiz-zira">Rancho Raíz</a> · 
+            <a href="https://github.com/oficinabarreal/terror-visual-pipeline">Terror Visual</a> · 
+            <a href="https://github.com/oficinabarreal">Más proyectos</a>
+        </p>
     </footer>
-    
-    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Smooth scroll para nav links
+        document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Intersection observer para animaciones
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.feature-card, .article-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Chart.js para estadísticas
+        const ctx = document.createElement('canvas');
+        ctx.id = 'statsChart';
+    </script>
 </body>
 </html>
