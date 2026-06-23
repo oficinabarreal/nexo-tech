@@ -104,55 +104,54 @@ def filter_and_rank(items: list, top_n: int = 10) -> list:
 
 # ─── Generación de resumen ──────────────────────────────────────────────────
 
-def generate_summary(item: dict) -> dict:
-    """Genera resumen con ángulo original usando IA."""
+def generate_batch_summary(items: list) -> list:
+    """Genera resúmenes en batch (una sola llamada IA para todos)."""
     system = """Sos el curador de nexo-tech, un blog de tecnología, creatividad y Android.
 Redactá resúmenes concisos, con ángulo original, en español.
-Sé técnico pero accesible. Conectá la noticia con tendencias.
-Formato: 2-3 párrafos cortos. Sin titular (ya lo tenemos)."""
+Sé técnico pero accesible. Conectá la noticia con tendencias."""
     
-    prompt = """Noticia: {title}
-Fuente: {source}
-Descripción original: {description}
+    # Preparar lista para IA
+    lista = ""
+    for i, item in enumerate(items, 1):
+        lista += f"{i}. {item['title']}\n   Fuente: {item.get('source_name', '?')}\n   Desc: {item['description'][:150]}\n\n"
+    
+    prompt = f"""Estas son las top {len(items)} noticias de hoy. Para cada una, generá:
+- resumen (2 oraciones)
+- ángulo de debate (1 pregunta)
+- tags (3 keywords)
+- trend_score (1-10)
 
-Generá:
-1. Un resumen de 2-3 párrafos con ángulo original
-2. Un "ángulo de debate" (pregunta abierta para los lectores)
-3. Tags: 3-5 tags relevantes
-4. Score de tendencia (1-10)
+Noticias:
+{lista}
 
-Formato JSON:
-{{"resumen": "...", "angle": "...", "tags": ["...", "..."], "trend_score": 8}}""".format(
-        title=item["title"],
-        source=item.get("source_name", "unknown"),
-        description=item["description"]
-    )
+Respondé SOLO con JSON válido (array de objetos):
+[{{"i":1, "resumen":"...", "angle":"...", "tags":["..."], "trend_score":8}}, ...]"""
     
     response = call_ai(prompt, system)
     
-    # Parsear JSON de la respuesta
+    # Parsear
+    import re
     try:
-        # Buscar JSON en la respuesta
-        import re
-        json_match = re.search(r'\{[^{}]*\}', response, re.DOTALL)
+        json_match = re.search(r'\[.*\]', response, re.DOTALL)
         if json_match:
             data = json.loads(json_match.group())
-            item["summary"] = data.get("resumen", response[:300])
-            item["angle"] = data.get("angle", "")
-            item["tags"] = data.get("tags", [])
-            item["trend_score"] = data.get("trend_score", 5)
-        else:
-            item["summary"] = response[:500]
+            for d in data:
+                idx = d.get("i", 0) - 1
+                if 0 <= idx < len(items):
+                    items[idx]["summary"] = d.get("resumen", "")
+                    items[idx]["angle"] = d.get("angle", "")
+                    items[idx]["tags"] = d.get("tags", [])
+                    items[idx]["trend_score"] = d.get("trend_score", 5)
+    except Exception as e:
+        print(f"  [WARN] Parse error: {e}")
+        # Fallback: sin IA, usar descripción
+        for item in items:
+            item["summary"] = item["description"][:300]
             item["angle"] = ""
             item["tags"] = []
             item["trend_score"] = 5
-    except:
-        item["summary"] = response[:500]
-        item["angle"] = ""
-        item["tags"] = []
-        item["trend_score"] = 5
     
-    return item
+    return items
 
 # ─── Main ────────────────────────────────────────────────────────────────────
 
@@ -173,13 +172,14 @@ def main():
     # Filtrar y rankear
     top_items = filter_and_rank(items, top_n=10)
     
-    # Generar resúmenes con IA
-    print("\nGenerando resúmenes con IA...")
-    curated = []
-    for i, item in enumerate(top_items, 1):
-        print(f"  {i}/10: {item['title'][:50]}...")
-        item = generate_summary(item)
-        curated.append(item)
+    # Generar resúmenes con IA (batch)
+    print("\nGenerando resúmenes con IA (batch)...")
+    curated = generate_batch_summary(top_items)
+    
+    print(f"\nTop 10 curadas:")
+    for i, item in enumerate(curated, 1):
+        print(f"  {i}. [{item['category']}] {item['title'][:60]}...")
+        print(f"     Resumen: {item.get('summary', '')[:80]}...")
     
     # Guardar curado
     output = {
