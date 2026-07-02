@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">3</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">5</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Gadgets", "Android", "IA/ML"],
+            labels: ["Tech", "Android", "Gadgets"],
             datasets: [{
-                data: [6, 2, 1, 1],
+                data: [7, 2, 1],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -89,15 +89,15 @@
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="android">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-android">Android</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Wayve launches $85M employee tender offer at $8.5B valuation</a></h2>
-    <p>Wayve’s offering is part of a growing trend of AI startups using employee tenders as a strategic tool to attract and retain talent.</p>
+    <h2><a href="articles/article.html">How to install the latest Android 17 Beta on Google Pixel</a></h2>
+    <p>Google’s ongoing Android 17 beta is now preparing the subsequent feature and maintenance updates following the main Android 17 release. Here’s how to get your hands on the absolute latest.</p>
     <div class="card-footer">
-        <span>techcrunch</span>
+        <span>9to5google</span>
         <span>Wed, 01 Jul 2026</span>
     </div>
 </div>
@@ -107,24 +107,37 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Acti puts AI agents directly into your smartphone keyboard</a></h2>
-    <p>Acti is betting the smartphone keyboard is the next home for AI assistants. The startup's new keyboard for iOS and Android works across apps and lets users create custom AI-powered shortcuts using nat</p>
+    <h2><a href="articles/article.html">Indian tech tycoon bets $30M of his own money to build AI alternative to Microsoft Office</a></h2>
+    <p>Neo is Bhavin Turakhia’s fifth venture and his latest involving enterprise software. This time he's taking on Microsoft Office and Google Apps with AI.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Tue, 30 Jun 2026</span>
+        <span>Thu, 02 Jul 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="gadgets">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-gadgets">Gadgets</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Yeasound RIC800 Hearing Aids Review: Good Audio, Glitchy App</a></h2>
-    <p>With AI-powered noise reduction, an automatic speech-focusing system, and a simple, effective hearing test, it’s a shame these aids don't come with a better app.</p>
+    <h2><a href="articles/article.html">After spooking Trump into safety testing, Anthropic AI models get global release</a></h2>
+    <p>US lifts curbs on Anthropic’s advanced Fable and Mythos models.</p>
     <div class="card-footer">
-        <span>wired</span>
-        <span>Mon, 29 Jun 2026</span>
+        <span>arstechnica</span>
+        <span>Wed, 01 Jul 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">A cheap Chinese AI model is closing in on Anthropic and OpenAI</a></h2>
+    <p>Chinese startup’s latest AI model has landed fourth on one of the industry’s most closely watched intelligence rankings, and it costs a fraction of what Anthropic or OpenAI charge for comparable perfo</p>
+    <div class="card-footer">
+        <span>the_next_web_ai</span>
+        <span>Thu, 02 Jul 2026</span>
     </div>
 </div>
 
@@ -172,24 +185,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Trump drops restrictions on Anthropic’s Mythos and Fable models</a></h2>
-    <p>The Trump administration's erratic approach to AI policymaking has left companies across the industry with little clarity about what will govern future model releases.</p>
+    <h2><a href="articles/article.html">Microsoft launches its own AI deployment company with $2.5 billion commitment</a></h2>
+    <p>Microsoft follows Amazon, OpenAI and Anthropic with its new AI deployment group.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Wed, 01 Jul 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">OpenClaw is finally available on Android and iOS</a></h2>
-    <p>The free open source agentic program is finally invading your phone.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Tue, 30 Jun 2026</span>
+        <span>Thu, 02 Jul 2026</span>
     </div>
 </div>
 
@@ -198,11 +198,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Anthropic launches Claude Sonnet 5 as a cheaper way to run agents</a></h2>
-    <p>Anthropic’s Claude Sonnet 5 brings stronger agentic capabilities, lower pricing, and improved safety, positioning the model as a cheaper alternative to Opus, GPT-5.5, and Gemini Pro.</p>
+    <h2><a href="articles/article.html">Rivian raises EV sales forecast as Q2 production ramps up</a></h2>
+    <p>The company now expects to ship a few thousand more vehicles by the end of 2026 than it previously expected, after launching its R2 SUV last month.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Tue, 30 Jun 2026</span>
+        <span>Thu, 02 Jul 2026</span>
     </div>
 </div>
 
