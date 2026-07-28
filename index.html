@@ -40,7 +40,7 @@
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">4</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Android", "IA/ML"],
+            labels: ["IA/ML", "Tech", "Android"],
             datasets: [{
-                data: [5, 3, 2],
+                data: [1, 5, 4],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,6 +76,19 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Smart rings are looking like my kind of AI gadget</a></h2>
+    <p>Over the last few months, I've spent a lot of time talking to my computer. One underrated feature of the LLM revolution has been a remarkable leap in all kinds of dictation technology - even the faste</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-07-28T08:00</span>
+    </div>
+</div>
+
 <div class="card" data-category="tech_news">
     <div class="card-header">
         <span class="category category-tech_news">Tech</span>
@@ -107,11 +120,37 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Elon Musk’s Boring Company reportedly raising funding at a $20 billion valuation</a></h2>
-    <p>Elon Musk's tunneling startup is reportedly in talks for a major new funding round.</p>
+    <h2><a href="articles/article.html">Apple launches ‘Upgrade’ program to lease new devices</a></h2>
+    <p>Apple has officially introduced "Apple Upgrade," a new leasing program that aims to make it easier to get your hands on the latest iPhone, Mac, iPad, and Apple Watch models. The service is launching t</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sat, 25 Jul 2026</span>
+        <span>theverge</span>
+        <span>2026-07-28T08:23</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Mate Security Crosses $50M in Funding as AI Security Operations Startup Heads to Black Hat USA</a></h2>
+    <p>Artificial intelligence is reshaping cybersecurity at a pace that many security operations centers were never designed to handle. While organizations are embracing AI to improve efficiency, attackers </p>
+    <div class="card-footer">
+        <span>the_next_web_ai</span>
+        <span>Tue, 28 Jul 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="android">
+    <div class="card-header">
+        <span class="category category-android">Android</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Samsung’s next major Android update forces you to reset your phone after 13 failed unlocks</a></h2>
+    <p>Following the changes Google has made in Android 17, Samsung’s next major One UI update also implements much stricter lockdown restrictions, including permanently locking a Galaxy device after 13 fail</p>
+    <div class="card-footer">
+        <span>9to5google</span>
+        <span>Tue, 28 Jul 2026</span>
     </div>
 </div>
 
@@ -164,45 +203,6 @@
     <div class="card-footer">
         <span>9to5google</span>
         <span>Tue, 21 Jul 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Making sense of the panic over Chinese AI</a></h2>
-    <p>On the latest episode of Equity, we discussed why Moonshot AI's Kimi seemed to panic Silicon Valley and Wall Street.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sun, 26 Jul 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Monday.com is the latest tech company to blame AI for layoffs — here are 20 others</a></h2>
-    <p>A running look — in reverse chronological order — at the bigger tech companies that have announced significant layoffs this year with AI as a stated factor.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sun, 26 Jul 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">SpaceX launches new V3 Starlink satellites but suffers another booster failure</a></h2>
-    <p>The company ticked off a few more boxes on the second Starship V3 flight, but appears to have had another issue relighting the booster's rocket engines.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 24 Jul 2026</span>
     </div>
 </div>
 
