@@ -36,7 +36,7 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">2</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["IA/ML", "Tech", "Android"],
+            labels: ["Tech", "Android"],
             datasets: [{
-                data: [1, 5, 4],
+                data: [8, 2],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,16 +76,16 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="ai_ml">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Smart rings are looking like my kind of AI gadget</a></h2>
-    <p>Over the last few months, I've spent a lot of time talking to my computer. One underrated feature of the LLM revolution has been a remarkable leap in all kinds of dictation technology - even the faste</p>
+    <h2><a href="articles/article.html">As AI content floods the internet, Pangram raises $9M to detect it</a></h2>
+    <p>Pangram has raised $9 million to scale its AI detection software. The startup has also released a new AI text detection model, Pangram 4, and an AI image detection model in research preview.</p>
     <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-07-28T08:00</span>
+        <span>techcrunch</span>
+        <span>Wed, 29 Jul 2026</span>
     </div>
 </div>
 
@@ -99,6 +99,19 @@
     <div class="card-footer">
         <span>venturebeat_ai</span>
         <span>Wed, 07 Jan 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Samsung keeps pretending Galaxy phones have Qi2 magnets with new accessories</a></h2>
+    <p>Samsung insists its Galaxy phones work with magnetic accessories, or at least that’s the vibe you’ll get scrolling through the company’s store. Despite its latest release yet again skipping built-in Q</p>
+    <div class="card-footer">
+        <span>9to5google</span>
+        <span>Tue, 28 Jul 2026</span>
     </div>
 </div>
 
@@ -120,11 +133,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Apple launches ‘Upgrade’ program to lease new devices</a></h2>
-    <p>Apple has officially introduced "Apple Upgrade," a new leasing program that aims to make it easier to get your hands on the latest iPhone, Mac, iPad, and Apple Watch models. The service is launching t</p>
+    <h2><a href="articles/article.html">These App Store hidden gems prove there’s still room for great software in the AI era</a></h2>
+    <p>Despite predictions that AI agents could make traditional apps obsolete, developers are shipping new software faster than ever. From smarter bookmarking tools and neighborhood marketplaces to digital </p>
     <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-07-28T08:23</span>
+        <span>techcrunch</span>
+        <span>Tue, 28 Jul 2026</span>
     </div>
 </div>
 
@@ -133,10 +146,10 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Mate Security Crosses $50M in Funding as AI Security Operations Startup Heads to Black Hat USA</a></h2>
-    <p>Artificial intelligence is reshaping cybersecurity at a pace that many security operations centers were never designed to handle. While organizations are embracing AI to improve efficiency, attackers </p>
+    <h2><a href="articles/article.html">Fish Audio raises $52M seed to build AI voice models for creators and enterprises</a></h2>
+    <p>Since launching last year, the startup today has more than 8 million people using the open source or hosted version of its models, and now generates annual recurring revenue of $21 million.</p>
     <div class="card-footer">
-        <span>the_next_web_ai</span>
+        <span>techcrunch</span>
         <span>Tue, 28 Jul 2026</span>
     </div>
 </div>
@@ -172,37 +185,24 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Galaxy Watch 9, Watch Ultra 2 are official as Samsung makes the jump to Snapdragon</a></h2>
-    <p>Like clockwork — sorry, sorry, I’m sorry — Samsung’s returned yet again to its Unpacked stage with a slate of new gadgets ready to beg for your wallet. Alongside a crop of three new foldables, both th</p>
+    <h2><a href="articles/article.html">Bot-detection startup Spur nabs $200M from Insight</a></h2>
+    <p>Spur Intelligence has raised a $200 million round from Insight Partners for its tech that can identify legit human traffic from bots.</p>
     <div class="card-footer">
-        <span>9to5google</span>
-        <span>Wed, 22 Jul 2026</span>
+        <span>techcrunch</span>
+        <span>Tue, 28 Jul 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="android">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-android">Android</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Today’s Android app deals and freebies: Old Man’s Journey, Roundguard, ELOH, more</a></h2>
-    <p>Your afternoon lineup of the best Android game and app deals is now ready to roll, including titles like Old Man’s Journey, Roundguard, ELOH, 1945 Sky Shooter: Premium, Police Department Tycoon Pro, a</p>
+    <h2><a href="articles/article.html">DoorDash is going airborne with new drone delivery division</a></h2>
+    <p>DoorDash is launching a new drone delivery program called DoorDash Air. The largest food delivery app in the US said that it has approval from the Federal Aviation Administration that clears the way f</p>
     <div class="card-footer">
-        <span>9to5google</span>
-        <span>Tue, 21 Jul 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="android">
-    <div class="card-header">
-        <span class="category category-android">Android</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Deals: Galaxy Watch 8 Classic $280 off, Pixel 10 Pro Fold nearly $500 off, Philips Hue Bridge Pro, Chromebook, more</a></h2>
-    <p>Today is your last chance to secure your FREE credit ahead of tomorrow’s official Galaxy Z Fold 8 series and Watch 9 launch, but we also have a deep $280 price drop hits Samsung Galaxy Watch 8 Classic</p>
-    <div class="card-footer">
-        <span>9to5google</span>
-        <span>Tue, 21 Jul 2026</span>
+        <span>theverge</span>
+        <span>2026-07-29T09:00</span>
     </div>
 </div>
 
