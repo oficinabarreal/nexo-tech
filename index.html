@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">3</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">5</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Gadgets", "Android", "IA/ML"],
+            labels: ["Tech", "Gadgets", "Android"],
             datasets: [{
-                data: [4, 1, 3, 2],
+                data: [6, 1, 3],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,6 +76,19 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Google might launch a ‘Pixel Tag’</a></h2>
+    <p>Google is seemingly working on an item tracker that might compete with Apple's AirTag. 9to5Google obtained an image of something called a "Google Pixel Tag" that has a small oval shape. The publicatio</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-07-31T14:27</span>
+    </div>
+</div>
+
 <div class="card" data-category="tech_news">
     <div class="card-header">
         <span class="category category-tech_news">Tech</span>
@@ -107,6 +120,19 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
+    <h2><a href="articles/article.html">Smallest.ai raises $13M to build ultra-fast voice AI that sounds genuinely human</a></h2>
+    <p>The startup is building voice models designed to make AI phone calls pass the Turing test.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Fri, 31 Jul 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
     <h2><a href="articles/article.html">Repeat founder Ryan Williams raises $10M seed for an AI startup for private credit managers</a></h2>
     <p>Ellis AI announced Thursday its emergence from stealth with $10 million in seed funding.</p>
     <div class="card-footer">
@@ -120,8 +146,8 @@
         <span class="category category-gadgets">Gadgets</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Anthropic Says Claude Hacked 3 Organizations During Cybersecurity Tests</a></h2>
-    <p>In a review triggered by OpenAI’s Hugging Face incident, Anthropic discovered three of its AI models had breached real organizations during third-party evaluations.</p>
+    <h2><a href="articles/article.html">Anthropic Says Claude Hacked Into 3 Organizations During Cybersecurity Tests</a></h2>
+    <p>In a review triggered by OpenAI’s Hugging Face incident, Anthropic discovered three of its AI models had breached real-world organizations during third-party evaluations.</p>
     <div class="card-footer">
         <span>wired</span>
         <span>Fri, 31 Jul 2026</span>
@@ -177,32 +203,6 @@
     <div class="card-footer">
         <span>9to5google</span>
         <span>Fri, 24 Jul 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Anthropic says its own AI models breached three companies during security tests</a></h2>
-    <p>After OpenAI's models broke into Hugging Face, Anthropic checked its own history and found three similar incidents</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 31 Jul 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Apple says gaming slowdown and App Store changes hurt services growth</a></h2>
-    <p>Apple said a slowdown in mobile gaming and changes to the App Store’s business model — including court-ordered payment rule changes in the U.S. — weighed on its services business, even as the company </p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Thu, 30 Jul 2026</span>
     </div>
 </div>
 
