@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">4</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">5</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Android", "IA/ML"],
+            labels: ["Gadgets", "Tech", "IA/ML", "Android"],
             datasets: [{
-                data: [5, 2, 3],
+                data: [1, 6, 1, 2],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,6 +76,19 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
+<div class="card" data-category="gadgets">
+    <div class="card-header">
+        <span class="category category-gadgets">Gadgets</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">5 Best AI Notetakers (2026), Tested and Reviewed</a></h2>
+    <p>A growing collection of pocket-size gadgets lets you easily make recordings and extract info from them. Here are our favorites.</p>
+    <div class="card-footer">
+        <span>wired</span>
+        <span>Thu, 06 Aug 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="tech_news">
     <div class="card-header">
         <span class="category category-tech_news">Tech</span>
@@ -94,21 +107,8 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Samsung keeps pretending Galaxy phones have Qi2 magnets with new accessories</a></h2>
-    <p>Samsung insists its Galaxy phones work with magnetic accessories, or at least that’s the vibe you’ll get scrolling through the company’s store. Despite its latest release yet again skipping built-in Q</p>
-    <div class="card-footer">
-        <span>9to5google</span>
-        <span>Tue, 28 Jul 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Robinhood to list a fund that lets anyone back Y Combinator startups</a></h2>
-    <p>Robinhood's latest financial instrument intends to let any retail investor feel like they, too, can make money by backing Y Combinator startups.</p>
+    <h2><a href="articles/article.html">Meta launches Muse Code, an AI agent for large code bases</a></h2>
+    <p>Meta expanded its AI coding offerings with a new agent that, it promises, can handle complex tasks with complex software.</p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Wed, 05 Aug 2026</span>
@@ -120,11 +120,24 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Indian EV startup River raises $120M Series C to scale production, launch more models</a></h2>
-    <p>River plans to build a new factory, launch additional models from 2027, and target profitability as it scales production.</p>
+    <h2><a href="articles/article.html">Jeff Dean and other top AI researchers are leaving Google to launch their own startup</a></h2>
+    <p>The legendary Google executive is joined by other outgoing Google execs in a joint mission to use AI to push forward the process of scientific discovery.</p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Wed, 05 Aug 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">OpenAI says Apple’s trade secrets lawsuit is ‘rotten to its core’</a></h2>
+    <p>OpenAI has asked a federal judge to toss out Apple's landmark lawsuit accusing the ChatGPT maker of stealing trade secrets, describing the allegations as "meritless." In a motion filed yesterday to di</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-08-06T05:33</span>
     </div>
 </div>
 
@@ -133,11 +146,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Anthropic signs $10B deal with AI cloud startup Volta</a></h2>
-    <p>Anthropic has been on a cloud partnership spree in recent months, and its latest move is reportedly a $10 billion deal with AI cloud startup Volta.</p>
+    <h2><a href="articles/article.html">Google’s Top AI Brains Are Leaving to Launch Discovery Loop</a></h2>
+    <p>Jeff Dean and other high-profile Google executives have founded Discovery Loop, a startup that will seek AI-powered breakthroughs in everything from drug discovery to chip design.</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Tue, 04 Aug 2026</span>
+        <span>wired</span>
+        <span>Wed, 05 Aug 2026</span>
     </div>
 </div>
 
@@ -167,42 +180,29 @@
     </div>
 </div>
 
-<div class="card" data-category="ai_ml">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Android app developers may be unwittingly sharing their users’ location data with advertisers</a></h2>
-    <p>New findings by the Electronic Frontier Foundation aim to warn app developers that some of the third-party code they place in their apps may also collect their users' location data when they grant per</p>
+    <h2><a href="articles/article.html">Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce</a></h2>
+    <p>The startup's platform predicts what product a shopper wants next, learn their general taste, and fine-tune continuously based on what they do in real time.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Tue, 04 Aug 2026</span>
+        <span>Thu, 06 Aug 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="ai_ml">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Meet Wrinkles, an app that uncovers the hidden stories of the places around you</a></h2>
-    <p>Wrinkles, available on both iOS and Android, essentially acts as an AI-powered audio tour guide that reveals hidden history and local stories.</p>
+    <h2><a href="articles/article.html">Lucid Motors just delayed its affordable EV. Now what?</a></h2>
+    <p>The Cosmos EV is now slated for release in the second half of 2027. CEO Silvio Napoli said he's focused on getting the EV right, as well as its nearer-term robotaxi project with Uber and Nuro.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Tue, 04 Aug 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Waymo opens up robotaxi service in Dallas to everyone</a></h2>
-    <p>Waymo has dropped the waitlist for its robotaxi service in Dallas, the latest step in the company's bid to scale its self-driving technology across the United States, U.K., and Europe.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Tue, 04 Aug 2026</span>
+        <span>Wed, 05 Aug 2026</span>
     </div>
 </div>
 
