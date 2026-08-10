@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">3</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">5</div>
+            <div class="num">4</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Gadgets", "Tech", "IA/ML", "Android"],
+            labels: ["Android", "Tech", "IA/ML"],
             datasets: [{
-                data: [1, 3, 5, 1],
+                data: [2, 6, 2],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,16 +76,16 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="gadgets">
+<div class="card" data-category="android">
     <div class="card-header">
-        <span class="category category-gadgets">Gadgets</span>
+        <span class="category category-android">Android</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Nitecore’s latest power bank is the lightest and most compact yet</a></h2>
-    <p>There's two things you should know about me, your intrepid reviewer: I hate the feature creep associated with modern power banks, and I love shaving grams off the gear I carry when backpacking, bikepa</p>
+    <h2><a href="articles/article.html">The first rival Android app store just arrived in the US Play Store</a></h2>
+    <p>Following the latest twist in Google's legal battles with Epic, US Android users are now able to open Google's Play Store and download a third-party digital store with its own selection of apps. Aptoi</p>
     <div class="card-footer">
         <span>theverge</span>
-        <span>2026-08-08T03:00</span>
+        <span>2026-08-10T07:30</span>
     </div>
 </div>
 
@@ -115,19 +115,6 @@
     </div>
 </div>
 
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Hidden code in ChatGPT’s Android app suggests OpenAI is building a direct WhatsApp sticker export</a></h2>
-    <p>Hidden code in ChatGPT’s latest Android app suggests OpenAI is building a feature that would let users generate stickers and export them directly to WhatsApp. An APK teardown by Android Authority foun</p>
-    <div class="card-footer">
-        <span>the_next_web_ai</span>
-        <span>Sat, 08 Aug 2026</span>
-    </div>
-</div>
-
 <div class="card" data-category="android">
     <div class="card-header">
         <span class="category category-android">Android</span>
@@ -138,6 +125,45 @@
     <div class="card-footer">
         <span>9to5google</span>
         <span>Fri, 07 Aug 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Embattled hedge fund Situational Awareness invests $400M in chip startup Source Foundry</a></h2>
+    <p>The AI-focused hedge fund is still making some big bets.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Sun, 09 Aug 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">TechCrunch Mobility: Zoox prepares for launch and Uber’s AV empire</a></h2>
+    <p>Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Sun, 09 Aug 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">The AI safety test is becoming a safety risk</a></h2>
+    <p>AI agents are escaping cybersecurity testing environments and reaching real-world systems, raising questions about whether safety infrastructure, industry standards and regulation can keep pace with i</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Sun, 09 Aug 2026</span>
     </div>
 </div>
 
@@ -167,42 +193,16 @@
     </div>
 </div>
 
-<div class="card" data-category="ai_ml">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Chinese AI model Kimi escaped its cybersecurity testing environment, researchers say</a></h2>
-    <p>In the Kimi test, the sandbox designed to contain the experiment was not properly configured.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 07 Aug 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Airbnb says AI is helping it ship features faster as it tests a new search function</a></h2>
-    <p>Airbnb will debut a new AI-powered search experience with a toggle.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 07 Aug 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">AI detectors are creating a new era of distrust</a></h2>
-    <p>This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more news about how AI is changing our daily lives, follow Emma Roth. The Stepback arrives in our s</p>
+    <h2><a href="articles/article.html">Steam hardware shipper breach leaks customer data, including names and addresses</a></h2>
+    <p>Valve says a data breach may have exposed the personal information of customers who ordered its Steam hardware in Europe. In an email sent to users, Valve says its European shipping partner, CEVA Logi</p>
     <div class="card-footer">
         <span>theverge</span>
-        <span>2026-08-09T08:00</span>
+        <span>2026-08-10T08:48</span>
     </div>
 </div>
 
