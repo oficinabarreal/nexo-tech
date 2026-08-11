@@ -40,7 +40,7 @@
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">6</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Android", "Tech", "IA/ML"],
+            labels: ["Tech", "IA/ML", "Android"],
             datasets: [{
-                data: [2, 6, 2],
+                data: [4, 5, 1],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,19 +76,6 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="android">
-    <div class="card-header">
-        <span class="category category-android">Android</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">The first rival Android app store just arrived in the US Play Store</a></h2>
-    <p>Following the latest twist in Google's legal battles with Epic, US Android users are now able to open Google's Play Store and download a third-party digital store with its own selection of apps. Aptoi</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-08-10T07:30</span>
-    </div>
-</div>
-
 <div class="card" data-category="tech_news">
     <div class="card-header">
         <span class="category category-tech_news">Tech</span>
@@ -102,16 +89,29 @@
     </div>
 </div>
 
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">What to expect from Google’s 2026 Pixel hardware launch event</a></h2>
+    <p>It's that time of year: On Wednesday, Google is set to host its annual Made by Google hardware launch event for Pixel gadgets. Google itself has already teased new slab-style and foldable Pixel smartp</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-08-10T13:30</span>
+    </div>
+</div>
+
 <div class="card" data-category="ai_ml">
     <div class="card-header">
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">OpenAI acquires presentation startup NextSlide</a></h2>
-    <p>NextSlide says its team members are now working on ChatGPT.</p>
+    <h2><a href="articles/article.html">Four takeaways from Mark Zuckerberg’s massive AI manifesto</a></h2>
+    <p>Meta CEO Mark Zuckerberg has a lot to say about the idealized future he now envisions for humanity co-existing with artificial intelligence - his latest essay spans more than 6,500 words on the matter</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sat, 08 Aug 2026</span>
+        <span>theverge</span>
+        <span>2026-08-10T11:19</span>
     </div>
 </div>
 
@@ -133,11 +133,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Embattled hedge fund Situational Awareness invests $400M in chip startup Source Foundry</a></h2>
-    <p>The AI-focused hedge fund is still making some big bets.</p>
+    <h2><a href="articles/article.html">As AI-led attacks multiply, OpenAI launches a new cyber model</a></h2>
+    <p>OpenAI is expanding its AI cybersecurity defense program Daybreak, and rolling out a new cyber-trained AI model with it.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Sun, 09 Aug 2026</span>
+        <span>Mon, 10 Aug 2026</span>
     </div>
 </div>
 
@@ -146,11 +146,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">TechCrunch Mobility: Zoox prepares for launch and Uber’s AV empire</a></h2>
-    <p>Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.</p>
+    <h2><a href="articles/article.html">Valve slowly expands SteamOS support on non-Valve hardware</a></h2>
+    <p>New update includes improvements for the Intel-based MSI Claw 8 EX AI+ among others.</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sun, 09 Aug 2026</span>
+        <span>arstechnica</span>
+        <span>Mon, 10 Aug 2026</span>
     </div>
 </div>
 
@@ -159,50 +159,50 @@
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">The AI safety test is becoming a safety risk</a></h2>
-    <p>AI agents are escaping cybersecurity testing environments and reaching real-world systems, raising questions about whether safety infrastructure, industry standards and regulation can keep pace with i</p>
+    <h2><a href="articles/article.html">Peer review is overwhelmed—can it survive in the AI era?</a></h2>
+    <p>As research and AI-assisted papers surge, volunteer reviewers struggle to keep up.</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sun, 09 Aug 2026</span>
+        <span>arstechnica</span>
+        <span>Mon, 10 Aug 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Security researchers scanned the Polish web and found courts, hospitals, and airports at risk of hacks</a></h2>
-    <p>Researchers found common points of failure, like software used to organize and display web content, could have allowed hackers to run riot through government websites.</p>
+    <h2><a href="articles/article.html">6 Best Dehumidifiers to Fight Mold and Muggy Summers (2026)</a></h2>
+    <p>If you care about good air, it’s time for a dehumidifier. These are the best ones we’ve tested for everything from basements to drying laundry.</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 07 Aug 2026</span>
+        <span>wired</span>
+        <span>Tue, 11 Aug 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Cloudflare launches Kitesurf, a browser built for AI agents</a></h2>
-    <p>Kitesurf is a cloud-hosted browser designed for AI agents instead of people. It uses less computing power than Chromium for common automation tasks, helping developers build browser-based AI agents mo</p>
+    <h2><a href="articles/article.html">A New Trick Reveals AI Models’ Inner Thoughts</a></h2>
+    <p>Researchers devised a way to extract “reasoning traces” from Claude, GPT, and Gemini. What they found, they say, indicates that some Chinese AI may be trained on leading US models.</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 07 Aug 2026</span>
+        <span>wired</span>
+        <span>Tue, 11 Aug 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Steam hardware shipper breach leaks customer data, including names and addresses</a></h2>
-    <p>Valve says a data breach may have exposed the personal information of customers who ordered its Steam hardware in Europe. In an email sent to users, Valve says its European shipping partner, CEVA Logi</p>
+    <h2><a href="articles/article.html">AI Is Dead. Organoids Are Alive</a></h2>
+    <p>Mini human brains are being grown in labs all over the world. Soon, they could outthink neural networks.</p>
     <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-08-10T08:48</span>
+        <span>wired</span>
+        <span>Tue, 11 Aug 2026</span>
     </div>
 </div>
 
