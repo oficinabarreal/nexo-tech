@@ -40,7 +40,7 @@
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">6</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Android", "IA/ML"],
+            labels: ["IA/ML", "Tech", "Android"],
             datasets: [{
-                data: [6, 3, 1],
+                data: [4, 3, 3],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,6 +76,19 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed</a></h2>
+    <p>OpenAI is launching a preview of a sped up version of its latest, most powerful model, in an effort to court enterprise users.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Thu, 13 Aug 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="tech_news">
     <div class="card-header">
         <span class="category category-tech_news">Tech</span>
@@ -94,24 +107,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Lovable confirms new $13.3B valuation, raises another $400M</a></h2>
-    <p>This new funding comes after Lovable hit $500 million in annualized run rate revenue in June, the startup told TechCrunch.</p>
+    <h2><a href="articles/article.html">Samsung Galaxy Z Fold 8 Ultra review: The ultra foldable with an ultra price</a></h2>
+    <p>Samsung didn't have to change much this year because its hardware is just that good.</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Wed, 12 Aug 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">After Microsoft threatened legal action, a security researcher publishes a new Windows zero-day bug</a></h2>
-    <p>This is the latest zero-day released by security researcher Nightmare Eclipse, despite Microsoft publicly threatening to take legal action against them.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Wed, 12 Aug 2026</span>
+        <span>arstechnica</span>
+        <span>Fri, 14 Aug 2026</span>
     </div>
 </div>
 
@@ -159,24 +159,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">AI coding startup Cognition reportedly already in talks to raise at $40B valuation</a></h2>
-    <p>Cognition may be looking to raise another mega round just a few months after raising $1 billion at a $26 billion valuation.</p>
+    <h2><a href="articles/article.html">Investors sue Selena Gomez alleging fraud tied to her mental health startup</a></h2>
+    <p>The plaintiffs say they invested nearly $1.2 million in the company, and are accusing Gomez of failing to build and market the startup.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Wed, 12 Aug 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">OpenAI-backed Thrive Holdings raises $2B to bring AI to the enterprise</a></h2>
-    <p>Thrive Holdings has raised $2 billion in new funding at a $12 billion valuation from investors like SoftBank, D1 Capital Partners, and Altimeter Capital.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Wed, 12 Aug 2026</span>
+        <span>Thu, 13 Aug 2026</span>
     </div>
 </div>
 
@@ -185,24 +172,37 @@
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Mesh, Automattic’s CRM for everyone, comes to Android</a></h2>
-    <p>Mesh, an AI-powered contacts app and relationship manager from Automattic, is now an Android app.</p>
+    <h2><a href="articles/article.html">Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.</a></h2>
+    <p>AI is expensive, Ali Ghodsi tells TechCrunch. With so many investors wanting into his latest round, he said yes to more than planned.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Wed, 12 Aug 2026</span>
+        <span>Thu, 13 Aug 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Why Stream ring-maker Sandbar says the future of AI wearables is voice</a></h2>
-    <p>AI notetaking hardware has taken off over the past couple of years, with credit-card-sized devices, pendants, pins, and even transcribing earbuds all promising to capture your meetings and turn them i</p>
+    <h2><a href="articles/article.html">Anthropic set AI agents loose on the same task. They started a turf war.</a></h2>
+    <p>Anthropic researchers found AI agents can clash, collude, and coordinate in unexpected ways, raising new questions about whether today’s safety tests capture the risks of multi-agent systems.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Wed, 12 Aug 2026</span>
+        <span>Thu, 13 Aug 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">The MSI Claw EX is the most important handheld since Steam Deck — I still wouldn’t buy one</a></h2>
+    <p>As The Verge's resident handheld reviewer, I have nearly every portable gaming PC on a shelf in my house. The MSI Claw 8 EX AI Plus is now the first one I reach for. Thanks to a next-gen Intel chip an</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-08-14T07:00</span>
     </div>
 </div>
 
