@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">4</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">5</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "IA/ML", "Android"],
+            labels: ["Android", "IA/ML", "Gadgets", "Tech"],
             datasets: [{
-                data: [7, 2, 1],
+                data: [2, 3, 1, 4],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,29 +76,55 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="tech_news">
+<div class="card" data-category="android">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-android">Android</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Google packs Search and Gemini with new AI study tools</a></h2>
-    <p>The launch of the new study features marks Google's latest effort to make Gemini the AI assistant that students turn to when learning and studying, as it continues to compete with companies like OpenA</p>
+    <h2><a href="articles/article.html">Google Pixel 11 Review: Minor Upgrade</a></h2>
+    <p>Incremental improvements fail to generate much excitement, but Google’s Pixel 11 is still an accomplished Android phone.</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Wed, 19 Aug 2026</span>
+        <span>wired</span>
+        <span>Thu, 20 Aug 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Slack is launching collaborative vibe-coding channels</a></h2>
-    <p>Slack is introducing dedicated channels where teams can vibe-code together with AI agents instead of jumping between different tools and conversations. The Slack Code launch includes open, project-spe</p>
+    <h2><a href="articles/article.html">A third of web pages published since ChatGPT’s launch show signs of AI authorship, study finds</a></h2>
+    <p>ChatGPT and other AI models are now authoring and editing much of the new web.</p>
     <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-08-20T08:00</span>
+        <span>techcrunch</span>
+        <span>Thu, 20 Aug 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Grok exfiltrates user data when malicious instructions are encrypted</a></h2>
+    <p>Cryptographic Context Injection is only the latest way to break an LLM safety guardrail.</p>
+    <div class="card-footer">
+        <span>arstechnica</span>
+        <span>Thu, 20 Aug 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="gadgets">
+    <div class="card-header">
+        <span class="category category-gadgets">Gadgets</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Best Early Tech Labor Day Sales I’d Shop Myself (2026): AirTags, Dyson, and More</a></h2>
+    <p>From the best Dyson vacuum to the best wireless headphones and earbuds we’ve tested, you can get some great gadgets on sale already ahead of Labor Day.</p>
+    <div class="card-footer">
+        <span>wired</span>
+        <span>Fri, 21 Aug 2026</span>
     </div>
 </div>
 
@@ -128,6 +154,19 @@
     </div>
 </div>
 
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">DeepSeek launches an experimental multimodal model to rival Anthropic</a></h2>
+    <p>DeepSeek released an experimental multimodal model on Friday and said its agent performance is close to Anthropic’s Opus-4.8. On DeepSeek’s own published table, it beats that model on three benchmarks</p>
+    <div class="card-footer">
+        <span>the_next_web_ai</span>
+        <span>Fri, 21 Aug 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="android">
     <div class="card-header">
         <span class="category category-android">Android</span>
@@ -154,55 +193,16 @@
     </div>
 </div>
 
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Binance now lets AI agents trade, but keeping them in check is largely up to users</a></h2>
-    <p>Binance's Agent OS works with tools including ChatGPT, Claude Code, and Cursor.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Thu, 20 Aug 2026</span>
-    </div>
-</div>
-
 <div class="card" data-category="tech_news">
     <div class="card-header">
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Stripe didn’t really buy OpenRouter because of the ‘singularity’</a></h2>
-    <p>What does a payments giant want with a startup that routes prompts between different AI models? Stripe says it's because of "the singularity" but it's really for a far more real and powerful reason.</p>
+    <h2><a href="articles/article.html">AI data startup Micro1 reaches $500M gross run rate amid AI training boom</a></h2>
+    <p>Surging demand for AI training data is driving rapid growth for the startup and its rivals.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Wed, 19 Aug 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Cognition CEO denies report that SpaceX tried to acquire the startup</a></h2>
-    <p>SpaceX was reportedly in talks to buy AI coding startup Cognition. SpaceX has already acquired Cursor as it races to catch up to rivals like OpenAI and Anthropic in enterprise AI.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Wed, 19 Aug 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Rillet raises $100M Series C at $1B valuation — 2 years after emerging from stealth</a></h2>
-    <p>AI-native account startup Rillet became a unicorn, led by Iconiq, after it doubled its ARR in the past three months, it said.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Wed, 19 Aug 2026</span>
+        <span>Fri, 21 Aug 2026</span>
     </div>
 </div>
 
