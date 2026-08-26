@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">3</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">3</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Gadgets", "Android", "IA/ML"],
+            labels: ["Gadgets", "Android", "Tech"],
             datasets: [{
-                data: [6, 1, 1, 2],
+                data: [1, 3, 6],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,42 +76,42 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Lenovo confirms Legion Go issues after gamers report bricked devices</a></h2>
-    <p>When a company's software update turns your computer into a useless brick, should fixes be free? Framework, the modular computer startup, apparently thinks so. But it's not clear that computing giant </p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-08-24T19:38</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">The Witcher 4 developers target a 2028 release</a></h2>
-    <p>CD Projekt Red is aiming to launch The Witcher 4 sometime in 2028, joint CEO Michał Nowakowski says in a new video. CD Projekt Red has been working on its next mainline Witcher title for years and has</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-08-24T11:48</span>
-    </div>
-</div>
-
 <div class="card" data-category="gadgets">
     <div class="card-header">
         <span class="category category-gadgets">Gadgets</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Best Early Tech Labor Day Sales I’d Shop Myself (2026): AirTags, Dyson, and More</a></h2>
-    <p>From the best Dyson vacuum to the best wireless headphones and earbuds we’ve tested, you can get some great gadgets on sale already ahead of Labor Day.</p>
+    <h2><a href="articles/article.html">OpenAI’s Jalapeño chip is built for fast inference at scale, benchmarks show</a></h2>
+    <p>Tested on SemiAnalysis’ InferenceX benchmark, Jalapeño registered both more tokens per user and more throughput per kilowatt than the currently available state-of-the art.</p>
     <div class="card-footer">
-        <span>wired</span>
-        <span>Fri, 21 Aug 2026</span>
+        <span>techcrunch</span>
+        <span>Tue, 25 Aug 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="android">
+    <div class="card-header">
+        <span class="category category-android">Android</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Today’s Android app deals and freebies: NARUTO, Endling, Farm Invasion, Kingdomino, more</a></h2>
+    <p>Your afternoon lineup of the best Android game and app deals is now ready to roll, including titles like NARUTO: Ultimate Ninja STORM, Endling Extinction is Forever, Farm Invasion USA – Premium, Candl</p>
+    <div class="card-footer">
+        <span>9to5google</span>
+        <span>Tue, 25 Aug 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="android">
+    <div class="card-header">
+        <span class="category category-android">Android</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Deals: Galaxy S26 Ultra bundles $370 off, Moto Tag 2 from $17.50 each, TCL 2026 Google AI TVs up to $800 off, more</a></h2>
+    <p>Today’s 9to5Toys Lunch Break is headlined by a chance to land brand-new unlocked Samsung Galaxy S26 Ultra up to $340 off or with or Galaxy Watch 9/Ultra 2 bundles at $370 off. We also have Find Hub-re</p>
+    <div class="card-footer">
+        <span>9to5google</span>
+        <span>Tue, 25 Aug 2026</span>
     </div>
 </div>
 
@@ -133,24 +133,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Alabama launches investigation into OpenAI’s hack of Hugging Face</a></h2>
-    <p>Weeks after OpenAI disclosed that one of its cybersecurity models had gone rogue and hacked AI dataset company Hugging Face, Alabama’s attorney general announced an investigation into the incident.</p>
+    <h2><a href="articles/article.html">Hearing tech startup Legato emerges from stealth with $12M and a peek at its AI hearing glasses</a></h2>
+    <p>The glasses, called Legato Frames, integrate the company’s patented hearing-assistance technology into the arms of eyewear frames.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Mon, 24 Aug 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Instinct’s powerful AI assistant is raising privacy and security concerns</a></h2>
-    <p>Early testers are raving about what Instinct can do, but some say the AI assistant’s sweeping access, broad terms and ability to act on users’ behalf come with uncomfortable trade-offs.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Mon, 24 Aug 2026</span>
+        <span>Wed, 26 Aug 2026</span>
     </div>
 </div>
 
@@ -159,11 +146,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Valor, Point72 back General Intuition at $6B valuation as AI startup pushes into robotics</a></h2>
-    <p>General Intuition, the startup building a foundation model that trains generalized AI agents how to move through space and time, is in talks to raise at a $6 billion pre-money valuation from new inves</p>
+    <h2><a href="articles/article.html">Ventures Platform goes bigger — and broader — with its second Africa fund</a></h2>
+    <p>The Pan-African venture firm has raised $84 million and plans to invest in startups beyond its home market of Nigeria.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Mon, 24 Aug 2026</span>
+        <span>Wed, 26 Aug 2026</span>
     </div>
 </div>
 
@@ -172,37 +159,50 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">OpenAI is building AI agents for everything. Will everyone use them?</a></h2>
-    <p>Inside the frontier lab’s push to bring AI agents from software engineers to the masses.</p>
+    <h2><a href="articles/article.html">Robotics startup Generalist reaches $3B valuation, sources say</a></h2>
+    <p>The $200 million extension comes just months after the physical AI startup reached a $2 billion valuation.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Mon, 24 Aug 2026</span>
+        <span>Wed, 26 Aug 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="ai_ml">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">OpenAI subpoenaed by Alabama AG over Hugging Face hack</a></h2>
-    <p>Alabama's attorney general issued a subpoena to OpenAI on Monday as part of an investigation into how one of its AI agents escaped a supposedly secure testing environment and autonomously hacked anoth</p>
+    <h2><a href="articles/article.html">Instagram’s ‘First Draft’ feature aims to make editing Reels less tedious</a></h2>
+    <p>Instagram says the process can produce a first pass in under 10 seconds, potentially saving creators significant editing time while making video creation more approachable for people who don't have mu</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Tue, 25 Aug 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Stability AI, maker of image generator Stable Diffusion, raises $76 million in fresh funding</a></h2>
+    <p>The company's new fundraising total now stands at $232 million.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Tue, 25 Aug 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Rockstar finally responds to ‘heartbreaking’ GTA 6 leaks</a></h2>
+    <p>Rockstar Games has released its first official statement following days of sustained leaks of footage from Grand Theft Auto VI, calling the period "heartbreaking for our team." "It would be an underst</p>
     <div class="card-footer">
         <span>theverge</span>
-        <span>2026-08-25T05:15</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">The cat-and-mouse game over 3D-printed guns has begun</a></h2>
-    <p>The creator of the world's first 3D-printed gun claims he's developed a way to thwart government-mandated software meant to block 3D printers from making firearms. It's an opening volley in what's sha</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-08-24T15:50</span>
+        <span>2026-08-26T08:04</span>
     </div>
 </div>
 
