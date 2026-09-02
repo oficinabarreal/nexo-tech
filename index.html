@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">4</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">3</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Gadgets", "Android"],
+            labels: ["IA/ML", "Tech", "Gadgets", "Android"],
             datasets: [{
-                data: [6, 1, 3],
+                data: [1, 6, 1, 2],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,13 +76,13 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="tech_news">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">This startup is fuel-injecting hydrogen to make cargo ships more efficient</a></h2>
-    <p>Newlight has raised a $9 million seed round and completed an 8,500-nautical-mile test run from Singapore to Ghana.</p>
+    <h2><a href="articles/article.html">OpenAI’s Astra model is on the way — and very good at breaking into computer systems</a></h2>
+    <p>OpenAI previewed the precautions it is taking as it prepares to release Astra, its newest, cyber-critical LLM.</p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Tue, 01 Sep 2026</span>
@@ -94,11 +94,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Roku’s first OLED TVs undercut the midrange competition</a></h2>
-    <p>Just a few weeks ago the only midrange OLED options available were from LG and Samsung. But after Sony officially announced the Bravia 6 last week, Roku has now launched its first-ever OLED TV - the R</p>
+    <h2><a href="articles/article.html">AfterQuery reportedly becomes Y Combinator’s fastest-ever unicorn, now valued at $3.2B</a></h2>
+    <p>AI model-training startup AfterQuery has reportedly raised a round that valued it at $3.2 billion, just five months after announcing its $30 million Series A at a $300 million valuation in April.</p>
     <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-09-01T09:00</span>
+        <span>techcrunch</span>
+        <span>Tue, 01 Sep 2026</span>
     </div>
 </div>
 
@@ -112,6 +112,40 @@
     <div class="card-footer">
         <span>wired</span>
         <span>Mon, 31 Aug 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="android">
+    <div class="card-header">
+        <span class="category category-android">Android</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Samsung’s Android 17-based One UI 9 beta expands to these Galaxy phones this month</a></h2>
+    <p>Samsung is expanding its Android 17 / One UI 9 beta program to several new Galaxy smartphones this month, signaling that the stable release isn’t too far away.
+
+
+
+ more…</p>
+    <div class="card-footer">
+        <span>9to5google</span>
+        <span>Tue, 01 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Google Meet hardware dropping ChromeOS for Android</a></h2>
+    <p>As we wait for consumer Googlebooks to launch, Google shared today that it is “transitioning [its] Google Meet hardware portfolio from ChromeOS to Android.”
+
+
+
+ more…</p>
+    <div class="card-footer">
+        <span>9to5google</span>
+        <span>Tue, 01 Sep 2026</span>
     </div>
 </div>
 
@@ -145,29 +179,16 @@
     </div>
 </div>
 
-<div class="card" data-category="android">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-android">Android</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Today’s Android app deals and freebies: NARUTO, Endling, Farm Invasion, Kingdomino, more</a></h2>
-    <p>Your afternoon lineup of the best Android game and app deals is now ready to roll, including titles like NARUTO: Ultimate Ninja STORM, Endling Extinction is Forever, Farm Invasion USA – Premium, Candl</p>
+    <h2><a href="articles/article.html">Adobe acquires Indian market intelligence startup Rilo</a></h2>
+    <p>This is Adobe's second acquisition out of India after Rephrase.ai in 2023</p>
     <div class="card-footer">
-        <span>9to5google</span>
-        <span>Tue, 25 Aug 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="android">
-    <div class="card-header">
-        <span class="category category-android">Android</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Deals: Galaxy S26 Ultra bundles $370 off, Moto Tag 2 from $17.50 each, TCL 2026 Google AI TVs up to $800 off, more</a></h2>
-    <p>Today’s 9to5Toys Lunch Break is headlined by a chance to land brand-new unlocked Samsung Galaxy S26 Ultra up to $340 off or with or Galaxy Watch 9/Ultra 2 bundles at $370 off. We also have Find Hub-re</p>
-    <div class="card-footer">
-        <span>9to5google</span>
-        <span>Tue, 25 Aug 2026</span>
+        <span>techcrunch</span>
+        <span>Wed, 02 Sep 2026</span>
     </div>
 </div>
 
@@ -176,8 +197,8 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Lachy Groom backs Indian startup aiming to keep aircraft aloft for a year</a></h2>
-    <p>Founded by a 20-year-old, Alteon is developing autonomous aircraft that hopes to harvest wind energy to stay aloft for several months.</p>
+    <h2><a href="articles/article.html">Reliance’s JioHotstar takes its streaming empire global — without sports</a></h2>
+    <p>JioHotstar will only have entertainment content when it launches in the UK, Canada, and Singapore.</p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Tue, 01 Sep 2026</span>
@@ -189,24 +210,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Polymarket reportedly raises $300 million from Donald Trump Jr.’s investment fund</a></h2>
-    <p>The firm, 1789 Capital, led the funding round that reportedly will total around $1 billion.</p>
+    <h2><a href="articles/article.html">X says attackers are targeting user accounts after the launch of X Money</a></h2>
+    <p>X is investigating a wave of unsolicited password reset emails that it believes may be tied to the rollout of its new payments service.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Mon, 31 Aug 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">a16z brings growth fund to $8.5B days after launching new $1.1B fund</a></h2>
-    <p>Andreessen Horowitz held out its hand and returned with billions more in new funds to invest in startups.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Mon, 31 Aug 2026</span>
+        <span>Tue, 01 Sep 2026</span>
     </div>
 </div>
 
