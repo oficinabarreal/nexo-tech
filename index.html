@@ -40,7 +40,7 @@
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">4</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Gadgets", "Tech", "IA/ML", "Android"],
+            labels: ["IA/ML", "Gadgets", "Tech", "Android"],
             datasets: [{
-                data: [1, 7, 1, 1],
+                data: [2, 1, 6, 1],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,6 +76,19 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">OpenAI’s AGI number came from a harness, not the model</a></h2>
+    <p>OpenAI declared the AGI era on the strength of a 99.9% score. Run the same model through the benchmark’s own software, and it scores 62.7%. The gap is not a rounding error or a rival’s complaint. It c</p>
+    <div class="card-footer">
+        <span>the_next_web_ai</span>
+        <span>Sun, 06 Sep 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="gadgets">
     <div class="card-header">
         <span class="category category-gadgets">Gadgets</span>
@@ -112,6 +125,19 @@
     <div class="card-footer">
         <span>arstechnica</span>
         <span>Fri, 04 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Kenya bet its graduates on gig work in 2022. ChatGPT launched that year</a></h2>
+    <p>In 2022 Kenya adopted a ten-year national plan to move its graduates into online outsourcing work. OpenAI released ChatGPT the same year. Adam Satariano and Paul Mozur set out what happened next, repo</p>
+    <div class="card-footer">
+        <span>the_next_web_ai</span>
+        <span>Sun, 06 Sep 2026</span>
     </div>
 </div>
 
@@ -189,32 +215,6 @@
     <div class="card-footer">
         <span>9to5google</span>
         <span>Fri, 28 Aug 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">XDOF, just three months out of stealth, is in talks for a Series B at a $1.2B valuation</a></h2>
-    <p>The round is being raised just months after the robot data startup exited from stealth.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 04 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Judge blocks X rival from using Twitter name, but allows ‘Tweet’ for now</a></h2>
-    <p>A federal judge temporarily barred an X rival from using the Twitter name, but found that X was likely to have abandoned the “Tweet” trademark and bird logo. The startup has since relaunched as Tweet.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 04 Sep 2026</span>
     </div>
 </div>
 
