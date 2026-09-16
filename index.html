@@ -36,7 +36,7 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">4</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["IA/ML", "Tech", "Android"],
+            labels: ["Tech", "IA/ML", "Gadgets", "Android"],
             datasets: [{
-                data: [2, 6, 2],
+                data: [5, 2, 1, 2],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,13 +76,39 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Former Infosys chief’s AI startup nabs another $53M</a></h2>
+    <p>The Palo Alto startup says it has landed multiple seven-figure enterprise contracts within months of launch.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Wed, 16 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says</a></h2>
+    <p>AI isn't some new form of "alien mind," according to Jensen Huang. It's just hardware and software, so safety can be engineered by each AI product maker.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Wed, 16 Sep 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="ai_ml">
     <div class="card-header">
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Early Anthropic hire, former METR COO have found a way to rein in rogue AI agents</a></h2>
-    <p>Their startup, Artificial Intelligence Underwriting Company (AIUC) has raised $40 million in a Series A round led by Ribbit Capital, with participation from First Harmonic.</p>
+    <h2><a href="articles/article.html">Meta now lets AI agents handle the boring parts of WhatsApp Business setup</a></h2>
+    <p>A new WhatsApp Business MCP server lets developers use AI coding agents like Claude, Cursor, Codex, and ChatGPT to handle setup, messaging templates, testing, and troubleshooting.</p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Tue, 15 Sep 2026</span>
@@ -94,11 +120,24 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">New Italian unicorn Exein rides the physical AI wave</a></h2>
-    <p>Italian startup Exein has raised a $270 million round of funding led by Headline at a $1.7 billion valuation.</p>
+    <h2><a href="articles/article.html">The AI graveyard: a running list of projects and startups that didn’t make it</a></h2>
+    <p>From Apple's repeatedly delayed Siri AI to OpenAI's messy "super app" launch, here's a look at the AI projects that shut down or missed expectations.</p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Tue, 15 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="gadgets">
+    <div class="card-header">
+        <span class="category category-gadgets">Gadgets</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">7 Best Android Phones of 2026, Tested and Reviewed</a></h2>
+    <p>Shopping for a phone can be an ordeal. That’s why we’ve tested almost every Android phone, from the smartest to the cheapest—even phones that fold—to find the ones worth your money.</p>
+    <div class="card-footer">
+        <span>wired</span>
+        <span>Wed, 16 Sep 2026</span>
     </div>
 </div>
 
@@ -167,50 +206,11 @@
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Nitter and XCancel are dead (again) after X’s latest legal actions</a></h2>
-    <p>The privacy-friendly services for viewing X posts without an account have gone dark again after X's escalated legal action.</p>
+    <h2><a href="articles/article.html">Robots are waiting for a ChatGPT moment: Nvidia’s Les Karpas explains why at TechCrunch Disrupt 2026</a></h2>
+    <p>The robotics industry is still waiting for their breakthrough into day-to-day life. Nvidia's Les Karpas has an answer as to why at TechCrunch Disrupt 2026. Register before September 25 to save up to $</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Tue, 15 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">AEO startup Profound hits unicorn valuation, raises $180M Series D 7 months after last round</a></h2>
-    <p>Profound has raised a $180 million Series D at a $1.8 billion valuation, less than seven months after it raised a $96 million Series C.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Tue, 15 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">This doorbell camera lets a human security guard watch your front door</a></h2>
-    <p>DIY home security company SimpliSafe is bringing its AI-powered proactive security feature to the front door. The new SimpliSafe Video Doorbell Series 2 launches today for $199.99 and works with the c</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-09-15T09:36</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Voicemod’s new pocket-friendly device brings real-time voice changing to your phone</a></h2>
-    <p>Voicemod announced a new mobile device that expands the capabilities of the Voicemod Key dongle it launched in late 2024 as a way to bring the company's real-time voice changing tech to consoles. Whil</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-09-15T09:00</span>
+        <span>Wed, 16 Sep 2026</span>
     </div>
 </div>
 
