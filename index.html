@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">3</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">2</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Gadgets", "Tech", "Android", "IA/ML"],
+            labels: ["Tech", "Android", "IA/ML"],
             datasets: [{
-                data: [1, 6, 2, 1],
+                data: [5, 2, 3],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,16 +76,16 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="gadgets">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-gadgets">Gadgets</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">7 Best Android Phones of 2026, Tested and Reviewed</a></h2>
-    <p>Shopping for a phone can be an ordeal. That’s why we’ve tested almost every Android phone, from the smartest to the cheapest—even phones that fold—to find the ones worth your money.</p>
+    <h2><a href="articles/article.html">The FAA’s plan to fix air traffic? $875M worth of AI</a></h2>
+    <p>A new AI-based software program is being launched to help air traffic controllers better navigate their jobs as the crossing guards of America's skies.</p>
     <div class="card-footer">
-        <span>wired</span>
-        <span>Wed, 16 Sep 2026</span>
+        <span>techcrunch</span>
+        <span>Thu, 17 Sep 2026</span>
     </div>
 </div>
 
@@ -137,8 +137,34 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Huawei plans Q1 2027 launch of new AI chip as it takes on Nvidia</a></h2>
-    <p>Huawei is accelerating the launch of its next-generation Ascend 960DT AI chip as it pushes to compete with Nvidia and close China’s AI computing gap with the U.S.</p>
+    <h2><a href="articles/article.html">Open or closed AI? Nvidia’s Nader Khalil and Sydney Sykes take on one of the decisions shaping next-gen startups at TechCrunch Disrupt 2026</a></h2>
+    <p>Nvidia's Nader Khalil and Sydney Sykes discuss one of the decisions shaping next-gen startups on the Builders Stage at TechCrunch Disrupt 2026.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Fri, 18 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Khosla-backed Mazama Energy just raised $135M to drill deeper into superhot-rock geothermal</a></h2>
+    <p>Geothermal startup Mazama is drilling three miles underground to tap superhot rock, with one well capable of generating 15 MW of electricity 24/7.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Fri, 18 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Google DeepMind launches institute to widen the AGI debate</a></h2>
+    <p>The new institute aims to surface differing views between Google, Google DeepMind, and the broader global research community around AGI. "They will not always agree, and they will likely change their </p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Thu, 17 Sep 2026</span>
@@ -150,63 +176,37 @@
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">How Bain Capital Ventures plans to deploy its fresh $1.6B fund</a></h2>
-    <p>BCV's latest fund targets early-stage founders harnessing AGI and building the infrastructure to run it efficiently.</p>
+    <h2><a href="articles/article.html">PrismML hopes its tiny LLM will change how we all use AI</a></h2>
+    <p>If AI lab PrismML isn't on your radar yet, it should be.</p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Thu, 17 Sep 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Comp AI sets eyes on a continuously agentic future for security and compliance</a></h2>
-    <p>Comp AI, a cybersecurity and compliance startup, announced a $34 million Series A round led by Roo Capital and Grand Ventures.</p>
+    <h2><a href="articles/article.html">The fix for rogue AI agents could be more AI</a></h2>
+    <p>As companies hand off longer and more complex tasks to AI agents, they are running into an oversight problem: Agents can act faster, longer, and at greater volume than humans can realistically review.</p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Thu, 17 Sep 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Your startup’s next teammate might be an AI agent: Gusto, Insight Partners, and Leland explain what that changes at TechCrunch Disrupt 2026</a></h2>
-    <p>This session will explore how early-stage companies are building teams where humans and AI agents work alongside each other — and how founders can do that without sacrificing speed, accountability, or</p>
+    <h2><a href="articles/article.html">OpenAI caught its models leaving notes to successors to hide bad behavior</a></h2>
+    <p>OpenAI disclosed instances of GPT-5.6 Sol instructing future contexts to conceal mistakes and misaligned behavior, highlighting the growing challenge of detecting misalignment as increasingly capable </p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Thu, 17 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins</a></h2>
-    <p>Lunacy, purveyor of fine VST plug-ins like Cube, a synth that you control by moving a ball around a 3D space, has just launched Nova, a platform where creators can build custom music tools using AI an</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-09-17T10:00</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Spotify’s Fresh Finds Forward gives artists free studio time and more</a></h2>
-    <p>Getting added to Spotify's Fresh Finds playlists can be a huge break for artists trying to cut through the noise on streaming. Now Spotify is launching a program called Fresh Finds Forward, which aims</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-09-17T09:00</span>
     </div>
 </div>
 
