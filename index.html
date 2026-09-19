@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">4</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">2</div>
+            <div class="num">4</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Android", "IA/ML"],
+            labels: ["IA/ML", "Gadgets", "Tech", "Android"],
             datasets: [{
-                data: [5, 2, 3],
+                data: [4, 1, 3, 2],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,16 +76,29 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="tech_news">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">The FAA’s plan to fix air traffic? $875M worth of AI</a></h2>
-    <p>A new AI-based software program is being launched to help air traffic controllers better navigate their jobs as the crossing guards of America's skies.</p>
+    <h2><a href="articles/article.html">A new kind of AI model from a ChatGPT inventor is thrilling developers</a></h2>
+    <p>Jev, a new kind of AI model, is showing developers a cheaper and faster path to software intelligence.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Thu, 17 Sep 2026</span>
+        <span>Fri, 18 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="gadgets">
+    <div class="card-header">
+        <span class="category category-gadgets">Gadgets</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Samsung Galaxy Watch9 Review: I Don’t Need Another Health Score</a></h2>
+    <p>Samsung’s latest smartwatch offers useful health tracking alongside a growing pile of metrics you may never use.</p>
+    <div class="card-footer">
+        <span>wired</span>
+        <span>Sat, 19 Sep 2026</span>
     </div>
 </div>
 
@@ -132,13 +145,39 @@
     </div>
 </div>
 
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Vals, backed by Andreessen Horowitz, is looking to become the gold standard for AI benchmarking</a></h2>
+    <p>Vals AI is hoping to make AI benchmarking a more neutral and trustworthy resource in a world increasingly inundated by AI models.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Sat, 19 Sep 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="tech_news">
     <div class="card-header">
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Open or closed AI? Nvidia’s Nader Khalil and Sydney Sykes take on one of the decisions shaping next-gen startups at TechCrunch Disrupt 2026</a></h2>
-    <p>Nvidia's Nader Khalil and Sydney Sykes discuss one of the decisions shaping next-gen startups on the Builders Stage at TechCrunch Disrupt 2026.</p>
+    <h2><a href="articles/article.html">A startup that builds other startups raised $100M and is all-in on physical AI</a></h2>
+    <p>UP.Labs, now doing business under the name Vantora, is building startups for industrial corporations.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Fri, 18 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">AI hallucination nearly triggers US military operation</a></h2>
+    <p>“It’s important for service members to understand the uncertainty inherent to LLMs," a GovAI research scholar warns.</p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Fri, 18 Sep 2026</span>
@@ -150,63 +189,24 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Khosla-backed Mazama Energy just raised $135M to drill deeper into superhot-rock geothermal</a></h2>
-    <p>Geothermal startup Mazama is drilling three miles underground to tap superhot rock, with one well capable of generating 15 MW of electricity 24/7.</p>
+    <h2><a href="articles/article.html">Disney’s first CTO led an AI startup it once accused of copying its characters</a></h2>
+    <p>The former CEO of Character.AI, which Disney previously sent a cease-and-desist letter to, will serve as the company's first-ever chief technology officer.</p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Fri, 18 Sep 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Google DeepMind launches institute to widen the AGI debate</a></h2>
-    <p>The new institute aims to surface differing views between Google, Google DeepMind, and the broader global research community around AGI. "They will not always agree, and they will likely change their </p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Thu, 17 Sep 2026</span>
-    </div>
-</div>
-
 <div class="card" data-category="ai_ml">
     <div class="card-header">
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">PrismML hopes its tiny LLM will change how we all use AI</a></h2>
-    <p>If AI lab PrismML isn't on your radar yet, it should be.</p>
+    <h2><a href="articles/article.html">Meet the winner of Nikon's Small World in Motion video contest</a></h2>
+    <p>Ning Xu of Tsinghua University captured tiny cilia beating in airways of a child with rare respiratory disorder.</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Thu, 17 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">The fix for rogue AI agents could be more AI</a></h2>
-    <p>As companies hand off longer and more complex tasks to AI agents, they are running into an oversight problem: Agents can act faster, longer, and at greater volume than humans can realistically review.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Thu, 17 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">OpenAI caught its models leaving notes to successors to hide bad behavior</a></h2>
-    <p>OpenAI disclosed instances of GPT-5.6 Sol instructing future contexts to conceal mistakes and misaligned behavior, highlighting the growing challenge of detecting misalignment as increasingly capable </p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Thu, 17 Sep 2026</span>
+        <span>arstechnica</span>
+        <span>Fri, 18 Sep 2026</span>
     </div>
 </div>
 
