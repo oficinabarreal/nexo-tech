@@ -40,7 +40,7 @@
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">5</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "IA/ML", "Gadgets", "Android"],
+            labels: ["IA/ML", "Tech", "Gadgets", "Android"],
             datasets: [{
-                data: [6, 2, 1, 1],
+                data: [3, 4, 1, 2],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,16 +76,55 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Meta’s Muse is outpacing ChatGPT’s early mobile launch</a></h2>
+    <p>Meta’s new AI agent Muse has racked up more downloads and daily active users in the U.S. and Canada than ChatGPT did over the same period after its mobile debut, according to new estimates from Appfig</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Mon, 21 Sep 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="tech_news">
     <div class="card-header">
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Where will the next breakout startup come from? Benchmark’s full partnership weighs in at TechCrunch Disrupt 2026</a></h2>
-    <p>Where will the next breakout startup come from? Benchmark’s full partnership weighs in on the main stage at TechCrunch Disrupt 2026. Save up to $200 before September 25 at 11:59 p.m. PT. Register now.</p>
+    <h2><a href="articles/article.html">Rabbit Is Back, This Time With an AI Agent App</a></h2>
+    <p>Two years after trying to sidestep mobile apps with dedicated AI hardware, Rabbit is launching OS3, a cross-platform agent that lives on the screens you already use.</p>
+    <div class="card-footer">
+        <span>wired</span>
+        <span>Tue, 22 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Adobe Premiere mobile is now available on Android</a></h2>
+    <p>Adobe has released its Premiere editing app for Android, a year after its iOS launch.</p>
+    <div class="card-footer">
+        <span>engadget</span>
+        <span>Tue, 22 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Bill Gates’ Breakthrough Energy bets these 21 startups will shape energy’s future</a></h2>
+    <p>To the investors at Bill Gates' Breakthrough Energy, the coming wave of electrification will make data center energy demands look quaint by comparison. Here's how they're preparing.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Mon, 21 Sep 2026</span>
+        <span>Tue, 22 Sep 2026</span>
     </div>
 </div>
 
@@ -115,6 +154,49 @@
     </div>
 </div>
 
+<div class="card" data-category="android">
+    <div class="card-header">
+        <span class="category category-android">Android</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Adobe Premiere’s free mobile video editor arrives on Android</a></h2>
+    <p>Adobe Premiere’s mobile video editing app is now available on Android, a year after its iPhone launch. The app is free to download from Google Play and works on phones running Android 13 or later with</p>
+    <div class="card-footer">
+        <span>the_next_web_ai</span>
+        <span>Tue, 22 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Palo Alto Networks launches always-on AI security testing built on Claude Mythos and GPT-5.6-Cyber</a></h2>
+    <p>Palo Alto Networks is launching a subscription service that puts Anthropic and OpenAI models to work hunting for weaknesses in customers’ systems around the clock. Its threat research and consulting a</p>
+    <div class="card-footer">
+        <span>the_next_web_ai</span>
+        <span>Tue, 22 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="android">
+    <div class="card-header">
+        <span class="category category-android">Android</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Adobe Premiere for Android launches for free with layered video editing, YouTube templates</a></h2>
+    <p>Months after it arrived on iPhone, Adobe Premiere’s mobile version is now available on Android devices with layered video editing, templates, foldable optimization, and more.
+
+
+
+ more…</p>
+    <div class="card-footer">
+        <span>9to5google</span>
+        <span>Tue, 22 Sep 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="tech_news">
     <div class="card-header">
         <span class="category category-tech_news">Tech</span>
@@ -129,84 +211,6 @@
     <div class="card-footer">
         <span>9to5google</span>
         <span>Tue, 15 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="android">
-    <div class="card-header">
-        <span class="category category-android">Android</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Samsung Galaxy SmartTag 3 copies the worst part of Apple’s AirTag in leak</a></h2>
-    <p>Trackers like Apple’s AirTag have been a great piece of added utility to the mobile ecosystem, and every option has a slightly different look and feel. Samsung’s Galaxy SmartTag 3 is rumored to be lau</p>
-    <div class="card-footer">
-        <span>9to5google</span>
-        <span>Fri, 11 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Meet the next wave of VCs judging Startup Battlefield 200 at TechCrunch Disrupt 2026</a></h2>
-    <p>Meet the next wave of VCs judging the Startup Battlefield 200 contenders on the main stage at TechCrunch Disrupt 2026. Register by September 25 at 11:59 p.m. PT, to save up to $200 and to get a front-</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Mon, 21 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Google’s Gemini is the latest AI model to hack other companies</a></h2>
-    <p>Google said Gemini had "acted appropriately" by ending each hack immediately.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sat, 19 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">GM can’t ‘bring back’ Apple CarPlay because it never left</a></h2>
-    <p>Last week, GM announced a new software experience for its upcoming Chevy Silverado and GMC Sierra trucks, including a new look for Apple CarPlay and Android Auto, the popular phone mirroring systems t</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-09-21T13:47</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Can John Ternus find Apple’s next big thing?</a></h2>
-    <p>Today, I’m talking with Mark Gurman, who is the world’s best-sourced Apple reporter — both as Bloomberg’s chief Apple correspondent and the host of the upcoming podcast Power On.  Earlier this month, </p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-09-21T10:00</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">I got to see Google’s wild ideas about the future of laptops</a></h2>
-    <p>There are a few things about using a Googlebook that immediately feel just right. The hardware is polished (since it's based on current laptops). The OS is familiar (if you've ever used a Chromebook).</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-09-21T09:00</span>
     </div>
 </div>
 
