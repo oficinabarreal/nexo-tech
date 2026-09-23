@@ -40,7 +40,7 @@
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">5</div>
+            <div class="num">4</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["IA/ML", "Tech", "Gadgets", "Android"],
+            labels: ["Tech", "Gadgets", "Android", "IA/ML"],
             datasets: [{
-                data: [3, 4, 1, 2],
+                data: [7, 1, 1, 1],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,19 +76,6 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Meta’s Muse is outpacing ChatGPT’s early mobile launch</a></h2>
-    <p>Meta’s new AI agent Muse has racked up more downloads and daily active users in the U.S. and Canada than ChatGPT did over the same period after its mobile debut, according to new estimates from Appfig</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Mon, 21 Sep 2026</span>
-    </div>
-</div>
-
 <div class="card" data-category="tech_news">
     <div class="card-header">
         <span class="category category-tech_news">Tech</span>
@@ -102,81 +89,42 @@
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Adobe Premiere mobile is now available on Android</a></h2>
-    <p>Adobe has released its Premiere editing app for Android, a year after its iOS launch.</p>
-    <div class="card-footer">
-        <span>engadget</span>
-        <span>Tue, 22 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Bill Gates’ Breakthrough Energy bets these 21 startups will shape energy’s future</a></h2>
-    <p>To the investors at Bill Gates' Breakthrough Energy, the coming wave of electrification will make data center energy demands look quaint by comparison. Here's how they're preparing.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Tue, 22 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">What ChatGPT Thinks It Knows About You Is Affecting Its Answers. Here’s How to Change That</a></h2>
-    <p>Understanding how ChatGPT’s latest memory upgrade works will help you get even more out of OpenAI’s productivity tool.</p>
-    <div class="card-footer">
-        <span>wired</span>
-        <span>Sun, 20 Sep 2026</span>
-    </div>
-</div>
-
 <div class="card" data-category="gadgets">
     <div class="card-header">
         <span class="category category-gadgets">Gadgets</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Samsung Galaxy Watch9 Review: I Don’t Need Another Health Score</a></h2>
-    <p>Samsung’s latest smartwatch offers useful health tracking alongside a growing pile of metrics you may never use.</p>
+    <h2><a href="articles/article.html">SmartLabels QR Code Organizing System Review (2026): AI Made Sense of My Junk Drawer</a></h2>
+    <p>SmartLabels can inventory everything in a photo, but I tested whether its AI could survive the chaos of my busy household.</p>
     <div class="card-footer">
         <span>wired</span>
-        <span>Sat, 19 Sep 2026</span>
+        <span>Wed, 23 Sep 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="android">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-android">Android</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Adobe Premiere’s free mobile video editor arrives on Android</a></h2>
-    <p>Adobe Premiere’s mobile video editing app is now available on Android, a year after its iPhone launch. The app is free to download from Google Play and works on phones running Android 13 or later with</p>
+    <h2><a href="articles/article.html">Top mathematicians will advise OpenAI on releasing its AI maths results</a></h2>
+    <p>“We are currently facing the very specific challenge of advising OpenAI on how to coordinate the release of a large number of significant results in mathematics that they report have been produced by </p>
     <div class="card-footer">
         <span>the_next_web_ai</span>
-        <span>Tue, 22 Sep 2026</span>
+        <span>Wed, 23 Sep 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="ai_ml">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Palo Alto Networks launches always-on AI security testing built on Claude Mythos and GPT-5.6-Cyber</a></h2>
-    <p>Palo Alto Networks is launching a subscription service that puts Anthropic and OpenAI models to work hunting for weaknesses in customers’ systems around the clock. Its threat research and consulting a</p>
+    <h2><a href="articles/article.html">Upwind acquires Aegis as cybersecurity firm builds new AI Security Labs</a></h2>
+    <p>The cybersecurity industry is increasingly focused on how artificial intelligence can reshape both defensive technology and the threat landscape. Upwind is responding by acquiring AI security startup </p>
     <div class="card-footer">
         <span>the_next_web_ai</span>
-        <span>Tue, 22 Sep 2026</span>
+        <span>Wed, 23 Sep 2026</span>
     </div>
 </div>
 
@@ -211,6 +159,58 @@
     <div class="card-footer">
         <span>9to5google</span>
         <span>Tue, 15 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">YouTube releases new AI features for creators within its Studio app</a></h2>
+    <p>YouTube is adding new features to generate ideas and monitor the performance of thumbnails.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Wed, 23 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">YouTube adds new creator tools like video A/B testing, dynamic thumbnails, and live dubbing</a></h2>
+    <p>Many of these tools hinge on using generative AI to try out a variety of different tactics on a video to find what works best.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Wed, 23 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Ema raises $77M as AI starts eating into enterprise software and services</a></h2>
+    <p>Ema has raised $140 million to date and has more than 50 enterprise customers, including Google and Microsoft.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Wed, 23 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Snorkel AI triples valuation to $3.5B as demand for AI training data booms</a></h2>
+    <p>The seven-year-old startup has raised a $350 million Series E to fuel its data-as-a-service approach.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Tue, 22 Sep 2026</span>
     </div>
 </div>
 
