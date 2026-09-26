@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">4</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">5</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Android", "IA/ML"],
+            labels: ["Android", "Tech", "IA/ML", "Gadgets"],
             datasets: [{
-                data: [4, 1, 5],
+                data: [1, 4, 4, 1],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,19 +76,6 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Meet Feather, the startup building the ‘Android of robotics’ for developers</a></h2>
-    <p>Feather is betting on a customizable, $30,000 platform built for software developers.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Thu, 24 Sep 2026</span>
-    </div>
-</div>
-
 <div class="card" data-category="android">
     <div class="card-header">
         <span class="category category-android">Android</span>
@@ -103,6 +90,45 @@
     <div class="card-footer">
         <span>9to5google</span>
         <span>Tue, 22 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing</a></h2>
+    <p>The funding, which comes from Third Point, Nvidia, and others, will  fuel the company's massive AI data center buildout.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Fri, 25 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Astra and Opus just passed Turing’s other test</a></h2>
+    <p>Frontier AI models are finishing Alan Turing's World War II codebreaking work.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Fri, 25 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Meta’s AI Tamagotchi bet is…working?</a></h2>
+    <p>When AI leaders at OpenAI and Anthropic started talking about “pacing the frontier,” maybe someone should have asked: what pace? Now it’s turned into model drop week for both companies as Anthropic ro</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Fri, 25 Sep 2026</span>
     </div>
 </div>
 
@@ -125,49 +151,10 @@
         <span class="trend">🔥 5</span>
     </div>
     <h2><a href="articles/article.html">TechCrunch Disrupt 2026: Ricursive Intelligence’s Anna Goldie and Azalia Mirhoseini on when AI starts designing its own hardware</a></h2>
-    <p>At TechCrunch Disrupt 2026, Ricursive Intelligence co-founders Anna Goldie and Azalia Mirhoseini will take the Disrupt Stage to discuss closing the loop between AI and chip development Save up to $200</p>
+    <p>At TechCrunch Disrupt 2026, Ricursive Intelligence co-founders Anna Goldie and Azalia Mirhoseini will take the Disrupt Stage to discuss closing the loop between AI and chip development. Save up to $20</p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Fri, 25 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">PrismML brings its tiny LLMs to Qualcomm-powered smart glasses</a></h2>
-    <p>Prism's larger goal is open-weight AI that runs on devices and makes better use of the computing power they already have.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Thu, 24 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Meta’s Muse Charm looks like a Tamagotchi, but it’s tapping into a much newer trend</a></h2>
-    <p>Meta’s new AI gadget may look like a Tamagotchi, but its dangling form factor taps into a much broader Gen Z trend around bag charms, retro tech, and turning gadgets into fashion accessories.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Thu, 24 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Google Photos ‘Clueless’-inspired virtual closet is now available on Android and iOS</a></h2>
-    <p>The AI-powered feature builds a virtual wardrobe from your photos, and is now broadly available after first rolling out to Android users in June.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Thu, 24 Sep 2026</span>
     </div>
 </div>
 
@@ -189,11 +176,24 @@
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Can Apple Home’s AI camera features outsmart Amazon’s and Google’s? I put them to the test</a></h2>
-    <p>A few years back, I was at a beachside Easter egg hunt, watching my kids dash through sand dunes searching for sweet treats. My phone buzzed in my pocket; I ignored it. A moment later, it buzzed again</p>
+    <h2><a href="articles/article.html">Quince Luggage Is Affordable but Doesn’t Feel Cheap (2026)</a></h2>
+    <p>Is Quince the Away alternative we’ve been waiting for? I tested its luggage to find out, and the price difference is hard to ignore.</p>
     <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-09-25T09:00</span>
+        <span>wired</span>
+        <span>Sat, 26 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="gadgets">
+    <div class="card-header">
+        <span class="category category-gadgets">Gadgets</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Best Laptops (2026): My Top Recommendations After Testing Hundreds</a></h2>
+    <p>I’ve been reviewing laptops for over a decade, and here’s my advice for finding the right laptop for you.</p>
+    <div class="card-footer">
+        <span>wired</span>
+        <span>Fri, 25 Sep 2026</span>
     </div>
 </div>
 
@@ -202,11 +202,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Microsoft thinks its new Copilot ‘super app’ will be as influential as Office</a></h2>
-    <p>After teasing its new Copilot "super app" last month, Microsoft is officially unveiling it today. The redesigned Copilot app bundles three AI capabilities into a single interface of chat, coding, and </p>
+    <h2><a href="articles/article.html">You can check your Samsung Galaxy's health with a built-in test</a></h2>
+    <p>If your Samsung phone is acting strangely, you can test just about any element of the phone's hardware using this test.</p>
     <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-09-25T08:00</span>
+        <span>engadget</span>
+        <span>Sat, 26 Sep 2026</span>
     </div>
 </div>
 
