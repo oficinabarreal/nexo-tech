@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Android", "Tech", "IA/ML", "Gadgets"],
+            labels: ["Tech", "Gadgets", "Android", "IA/ML"],
             datasets: [{
-                data: [1, 4, 4, 1],
+                data: [3, 2, 2, 3],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,6 +76,32 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">PNOE’s new face mask wants to make lab-grade breath testing a self-serve affair</a></h2>
+    <p>PNOĒ, the Malden, Mass.-based startup whose breath-analyzing mask used to bear an unfortunate resemblance to Bane's, is launching a sleeker self-serve version on October 1 that lets gym-goers measure </p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Sun, 27 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="gadgets">
+    <div class="card-header">
+        <span class="category category-gadgets">Gadgets</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Sennheiser Momentum 5 review: Great sound, incredible battery life, and few compromises</a></h2>
+    <p>I spent the last few weeks with the Sennheiser Momentum 5 to determine if this pair actually stands out, testing everything from sound quality and noise cancellation to comfort and battery life.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Sun, 27 Sep 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="android">
     <div class="card-header">
         <span class="category category-android">Android</span>
@@ -90,6 +116,19 @@
     <div class="card-footer">
         <span>9to5google</span>
         <span>Tue, 22 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India</a></h2>
+    <p>The limited test covers select products and users, with a broader rollout planned for later in October.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Sun, 27 Sep 2026</span>
     </div>
 </div>
 
@@ -111,63 +150,24 @@
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Astra and Opus just passed Turing’s other test</a></h2>
-    <p>Frontier AI models are finishing Alan Turing's World War II codebreaking work.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 25 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Meta’s AI Tamagotchi bet is…working?</a></h2>
-    <p>When AI leaders at OpenAI and Anthropic started talking about “pacing the frontier,” maybe someone should have asked: what pace? Now it’s turned into model drop week for both companies as Anthropic ro</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 25 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">For months, OpenAI’s agent swarms have been attacking online databases to find obscure facts</a></h2>
-    <p>The latest unauthorized agent swarms were discovered by researchers.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 25 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">TechCrunch Disrupt 2026: Ricursive Intelligence’s Anna Goldie and Azalia Mirhoseini on when AI starts designing its own hardware</a></h2>
-    <p>At TechCrunch Disrupt 2026, Ricursive Intelligence co-founders Anna Goldie and Azalia Mirhoseini will take the Disrupt Stage to discuss closing the loop between AI and chip development. Save up to $20</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 25 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Leaks reveal a new Apple HomePod mini, iPad mini, and Apple TV 4K</a></h2>
-    <p>Apple is expected to announce more hardware before the end of the year following the debut of the iPhone 18 Pro and folding iPhone Duo earlier this month. The updated products will include a new versi</p>
+    <h2><a href="articles/article.html">OpenAI pauses training of its ‘most capable models’</a></h2>
+    <p>As reports of OpenAI's models breaking containment, hacking sites, and generally getting out of control pile up, the company has made the decision to pause training of its most powerful models. The de</p>
     <div class="card-footer">
         <span>theverge</span>
-        <span>2026-09-25T12:22</span>
+        <span>2026-09-26T12:34</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">You Don’t Need to Pay for Distraction-Blocking Software</a></h2>
+    <p>These free iOS and Android apps create the physical friction you need to put down your phone.</p>
+    <div class="card-footer">
+        <span>wired</span>
+        <span>Sun, 27 Sep 2026</span>
     </div>
 </div>
 
@@ -197,16 +197,16 @@
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="android">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-android">Android</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">You can check your Samsung Galaxy's health with a built-in test</a></h2>
-    <p>If your Samsung phone is acting strangely, you can test just about any element of the phone's hardware using this test.</p>
+    <h2><a href="articles/article.html">I use these 5 Samsung features every day, but most Galaxy owners ignore them</a></h2>
+    <p>Hidden One UI tools worth using daily</p>
     <div class="card-footer">
-        <span>engadget</span>
-        <span>Sat, 26 Sep 2026</span>
+        <span>android_police</span>
+        <span>Sun, 27 Sep 2026</span>
     </div>
 </div>
 
