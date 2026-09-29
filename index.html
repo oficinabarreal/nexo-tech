@@ -36,7 +36,7 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">2</div>
+            <div class="num">3</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Android"],
+            labels: ["Tech", "IA/ML", "Android"],
             datasets: [{
-                data: [8, 2],
+                data: [4, 5, 1],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -81,11 +81,24 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Nvidia launches new platform for reining in rogue AI agents</a></h2>
-    <p>As the debate rages over whether the recent spate of rogue AI agents is a step toward AGI or a more conventional engineering problem, Nvidia is offering its own answer to problem. Nvidia CEO Jensen Hu</p>
+    <h2><a href="articles/article.html">OpenAI launches Dots, its bubbly agentic avatar</a></h2>
+    <p>Dots are meant to operate independent of any specific hardware or interface, pursuing user-defined goals continuously in the background with minimal oversight.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Mon, 28 Sep 2026</span>
+        <span>Tue, 29 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">OpenAI launches GPT-6.1 Sol, says it nearly matches GPT-6 Astra and costs less</a></h2>
+    <p>OpenAI says GPT-6.1 Sol delivers significant improvements over GPT-6 Sol across complex professional tasks, including code writing and debugging, document understanding, and executing multi-step busin</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Tue, 29 Sep 2026</span>
     </div>
 </div>
 
@@ -94,24 +107,63 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Next 5 VCs judging Startup Battlefield 200 contenders at TechCrunch Disrupt 2026</a></h2>
-    <p>Thousands of applications. Multiple rounds of review. Hundreds of hours spent evaluating startups from around the world. Now comes the part everyone has been waiting for. Register for TechCrunch Disru</p>
+    <h2><a href="articles/article.html">Reco raises $55M as AI agent security startups crowd the market</a></h2>
+    <p>The round builds on a $30 million fundraise in February, taking the company's total funding to $140 million.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Mon, 28 Sep 2026</span>
+        <span>Tue, 29 Sep 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">OpenAI’s AI agents need to catch up</a></h2>
-    <p>OpenAI popularized the modern generative AI chatbot, but as its 2026 DevDay event approaches, it's fallen behind in one of the industry's hottest categories: continuously running, consumer-facing AI a</p>
+    <h2><a href="articles/article.html">OpenAI launches Dots, its Muse competitor</a></h2>
+    <p>OpenAI is responding to Meta's buzzy Muse AI with agentic helpers of its own: Dots. During its DevDay keynote on Tuesday, OpenAI announced that Dots will serve as always-on AI assistants that can "do </p>
     <div class="card-footer">
         <span>theverge</span>
-        <span>2026-09-28T14:45</span>
+        <span>2026-09-29T13:15</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">OpenAI says planned GPT-6.1 is too insecure to release</a></h2>
+    <p>Similar performance, security tradeoffs also seen in current public models.</p>
+    <div class="card-footer">
+        <span>arstechnica</span>
+        <span>Tue, 29 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Florida invokes extinction fears in legal bid to halt OpenAI development</a></h2>
+    <p>State says LLMs threaten civilization as "the greatest public nuisance ever created."</p>
+    <div class="card-footer">
+        <span>arstechnica</span>
+        <span>Mon, 28 Sep 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">OpenAI Delays Release of Latest Model Over Safety Concerns</a></h2>
+    <p>The company said its latest Astra model would undergo more work to meet safety standards, and issued an apology for the way it handled the hacking of an Australian government website.</p>
+    <div class="card-footer">
+        <span>wired</span>
+        <span>Tue, 29 Sep 2026</span>
     </div>
 </div>
 
@@ -133,19 +185,6 @@
         <span class="category category-android">Android</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">With the release of the One UI 9 changelog, Samsung details everything coming to phones</a></h2>
-    <p>A redesign of Samsung Health, accessibility improvements, and more customization options</p>
-    <div class="card-footer">
-        <span>android_police</span>
-        <span>Mon, 28 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="android">
-    <div class="card-header">
-        <span class="category category-android">Android</span>
-        <span class="trend">🔥 5</span>
-    </div>
     <h2><a href="articles/article.html">Adobe Premiere for Android launches for free with layered video editing, YouTube templates</a></h2>
     <p>Months after it arrived on iPhone, Adobe Premiere’s mobile version is now available on Android devices with layered video editing, templates, foldable optimization, and more.
 
@@ -158,55 +197,16 @@
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Meta launches enterprise AI platform, hires MongoDB CEO to lead new initiative</a></h2>
-    <p>Meta says it will focus on bringing its full technology stack, including Muse, Meta Business Agent, Muse API, Muse Code, and more to businesses and developers.</p>
+    <h2><a href="articles/article.html">OpenAI gives Codex reusable cloud environments that work across devices</a></h2>
+    <p>OpenAI is expanding Codex with reusable cloud development environments, a revamped CLI with voice controls, new code review tools and a security-focused product for scanning repositories and preparing</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Mon, 28 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Physical AI chip developer SiMa AI hits $1.45B valuation</a></h2>
-    <p>The edge computing startup raised a $150 million Series C led by Fidelity and Amplify.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Mon, 28 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">MAVI bets on the AI boom creating demand for a new kind of accountant</a></h2>
-    <p>Accounting staffing company MAVI emerges from stealth with $4 million in funding.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Mon, 28 Sep 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">After a deepfake voice fooled her grandfather, this founder sprang into action</a></h2>
-    <p>After her grandfather was scammed by a deepfake of his brother's voice, Tarini Padmanabhuni founded DetectifAI, a San Francisco startup building AI models small enough to run directly on smartphones a</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Mon, 28 Sep 2026</span>
+        <span>Tue, 29 Sep 2026</span>
     </div>
 </div>
 
