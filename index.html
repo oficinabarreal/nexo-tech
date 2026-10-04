@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">2</div>
+            <div class="num">3</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">5</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["IA/ML", "Tech"],
+            labels: ["IA/ML", "Android", "Tech"],
             datasets: [{
-                data: [5, 5],
+                data: [6, 1, 3],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -89,6 +89,32 @@
     </div>
 </div>
 
+<div class="card" data-category="android">
+    <div class="card-header">
+        <span class="category category-android">Android</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Customizing your Samsung Galaxy phone is a bit easier with One UI 9</a></h2>
+    <p>Lots of new options just became available to Samsung phones with the latest update. Customize your Quick Panel, Edge Panel and much more.</p>
+    <div class="card-footer">
+        <span>engadget</span>
+        <span>Sun, 04 Oct 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Trump unveils his new Super Intelligence Force</a></h2>
+    <p>This new task force is Trump's latest response to the debate over AI safety.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Sun, 04 Oct 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="tech_news">
     <div class="card-header">
         <span class="category category-tech_news">Tech</span>
@@ -115,16 +141,16 @@
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">An OpenAI safety employee has quit and is sounding the alarm</a></h2>
-    <p>David Robinson used to write the safety reports that accompanied every major model release at OpenAI. This week, he resigned from his position and is now speaking out in an editorial in The Atlantic. </p>
+    <h2><a href="articles/article.html">An AI couldn’t beat humans at StarCraft, so it decided to cheat</a></h2>
+    <p>StarSkirmish pits AI-made StarCraft-playing bots against one another, as well as against human-made bots. OpenAI's GPT-6 Astra and Claude Opus 5.5 were essentially tied as the best-performing AI-made </p>
     <div class="card-footer">
         <span>theverge</span>
-        <span>2026-10-03T10:31</span>
+        <span>2026-10-04T11:21</span>
     </div>
 </div>
 
@@ -133,24 +159,11 @@
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Meta open sources code to let you make Muse AI gadgets</a></h2>
-    <p>Meta now lets you make your own Muse gadgets that feature the company's new AI agent with code that the company open sourced. The company suggests projects like loading Muse on a color E Ink display t</p>
+    <h2><a href="articles/article.html">The AirPods Pro 3 are a fantastic deal at $179</a></h2>
+    <p>It’s been a while since we’ve seen a good discount on the Apple AirPods Pro 3, but like the latest iPad Mini and the M5 MacBook Airs, a great one is happening now for October Prime Day. You can snag a</p>
     <div class="card-footer">
         <span>theverge</span>
-        <span>2026-10-02T17:08</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">OpenAI’s Dot agent is enterprise software that can also order your dinner</a></h2>
-    <p>It's a tale as old as last week: OpenAI's new agent platform, called Dots, is full of cute little guys who can do your bidding. But unlike the ultra-approachable Meta Muse, Dots feel very much like us</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-10-02T14:00</span>
+        <span>2026-10-04T09:00</span>
     </div>
 </div>
 
@@ -172,8 +185,8 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">The 7-year-old Nvidia Shield TV is now $100 more expensive due to AI</a></h2>
-    <p>Initially launched in 2019, the Nvidia Shield TV Pro now retails for $299.99.</p>
+    <h2><a href="articles/article.html">This startup pays NYC residents to run air conditioners on free batteries</a></h2>
+    <p>Bonus: Every Electric’s batteries are beloved by household cats.</p>
     <div class="card-footer">
         <span>arstechnica</span>
         <span>Fri, 02 Oct 2026</span>
@@ -185,23 +198,10 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">SpaceX describes surgical intervention before launch of latest crew mission</a></h2>
-    <p>With Crew-13, Jessica Watkins became the first Black woman to lead a mission into space.</p>
+    <h2><a href="articles/article.html">The 7-year-old Nvidia Shield TV is now $100 more expensive due to AI</a></h2>
+    <p>Initially launched in 2019, the Nvidia Shield TV Pro now retails for $299.99.</p>
     <div class="card-footer">
         <span>arstechnica</span>
-        <span>Thu, 01 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">ICE Has Been Dumping Protester Photos Into a Palantir Database</a></h2>
-    <p>DHS agents not only tracked and intimidated people observing ICE activity in Maine, but stored information about them in a Palantir-built database, newly unsealed court filings say.</p>
-    <div class="card-footer">
-        <span>wired</span>
         <span>Fri, 02 Oct 2026</span>
     </div>
 </div>
