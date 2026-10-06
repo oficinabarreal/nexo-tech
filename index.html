@@ -40,7 +40,7 @@
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">5</div>
+            <div class="num">4</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["IA/ML", "Android", "Tech"],
+            labels: ["Tech", "IA/ML", "Android"],
             datasets: [{
-                data: [6, 1, 3],
+                data: [7, 2, 1],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,16 +76,68 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Mirror Particle is building a ‘world model’ of human behavior</a></h2>
+    <p>Mirror Particle will launch at TechCrunch Disrupt's Startup Battlefield 200 with a world model built from scratch to predict human behavior, arguing that LLM role-play falls short for market research </p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Tue, 06 Oct 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Flai’s AI dealership software is booking 50,000 appointments per month</a></h2>
+    <p>Flai's revenue has grown 20x in a year, and the company just closed a $27 million Series A funding round.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Tue, 06 Oct 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">We can’t just change the definition of ‘recording’</a></h2>
+    <p>With AI hardware, tech companies are pushing the definition of what does and doesn't constitute a recording. For most of gadget history, it'd be reasonable to assume that a device with a microphone or</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-10-06T12:29</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">A New Neurotech Startup Launches to Rival Sam Altman’s Merge Labs</a></h2>
+    <p>Bridge Neurotech is planning to build a wearable brain-computer interface that uses ultrasound.</p>
+    <div class="card-footer">
+        <span>wired</span>
+        <span>Tue, 06 Oct 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="ai_ml">
     <div class="card-header">
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">A Flaw in ChatGPT’s Mac App Could Have Let Hackers Grab Sensitive Data</a></h2>
-    <p>While the focus has been on AI agents’ hacking capabilities, a recently patched vulnerability in a ChatGPT app shows that AI software is itself an inviting—and vulnerable—target.</p>
+    <h2><a href="articles/article.html">Mistral Says Its New AI Model ‘Le Chonk’ Is the Best Open-Weight Offering Outside of China</a></h2>
+    <p>With the release of its new trillion-parameter model, Mistral is hoping to demonstrate it’s “still in the race” to build frontier-level artificial intelligence.</p>
     <div class="card-footer">
         <span>wired</span>
-        <span>Fri, 02 Oct 2026</span>
+        <span>Tue, 06 Oct 2026</span>
     </div>
 </div>
 
@@ -94,11 +146,11 @@
         <span class="category category-android">Android</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Customizing your Samsung Galaxy phone is a bit easier with One UI 9</a></h2>
-    <p>Lots of new options just became available to Samsung phones with the latest update. Customize your Quick Panel, Edge Panel and much more.</p>
+    <h2><a href="articles/article.html">Fantastical’s long-awaited Android debut begins today on Googlebook</a></h2>
+    <p>Fantastical has long been hailed as one of the greatest calendar apps available today, but if you’re an Android user, there’s a good chance you’ve never used it. Despite a move from Apple exclusivity </p>
     <div class="card-footer">
-        <span>engadget</span>
-        <span>Sun, 04 Oct 2026</span>
+        <span>9to5google</span>
+        <span>Mon, 05 Oct 2026</span>
     </div>
 </div>
 
@@ -107,11 +159,11 @@
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Trump unveils his new Super Intelligence Force</a></h2>
-    <p>This new task force is Trump's latest response to the debate over AI safety.</p>
+    <h2><a href="articles/article.html">Learn all about scaling, fundraising, founder how-tos, and more at TechCrunch Founder Summit, November 4</a></h2>
+    <p>There isn’t a single manual to read or prompt to give an LLM that can equip you with the skills and knowledge to build a company. But on November 4, TechCrunch Founder Summit gives founders the next-b</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Sun, 04 Oct 2026</span>
+        <span>Tue, 06 Oct 2026</span>
     </div>
 </div>
 
@@ -120,63 +172,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Spotify billionaire’s body scan startup has come to America</a></h2>
-    <p>Farooq Abbasi, an investor in Neko Health, talked to Equity about the hot health tech company and what's next for it.</p>
+    <h2><a href="articles/article.html">Anthropic is giving startups a free year of Claude Team and $1,000 in credits</a></h2>
+    <p>"We created this program because we believe the benefits of AI will reach most people through the companies that build on top of models, rather than through the models alone."</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Sat, 03 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Circuit Breaker Labs hopes to make AI safer for your kids (and you)</a></h2>
-    <p>With all the talk about how AI might one day kill us all, it's easy to forget that AI has already harmed some people psychologically. Circuit Breaker Labs has created "crash-test  dummies" to solve th</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 02 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">An AI couldn’t beat humans at StarCraft, so it decided to cheat</a></h2>
-    <p>StarSkirmish pits AI-made StarCraft-playing bots against one another, as well as against human-made bots. OpenAI's GPT-6 Astra and Claude Opus 5.5 were essentially tied as the best-performing AI-made </p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-10-04T11:21</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">The AirPods Pro 3 are a fantastic deal at $179</a></h2>
-    <p>It’s been a while since we’ve seen a good discount on the Apple AirPods Pro 3, but like the latest iPad Mini and the M5 MacBook Airs, a great one is happening now for October Prime Day. You can snag a</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-10-04T09:00</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Patient-zero drill put health facilities to the test—40% of them failed</a></h2>
-    <p>Actors with makeup and fake symptoms staggered into 73 healthcare facilities.</p>
-    <div class="card-footer">
-        <span>arstechnica</span>
-        <span>Fri, 02 Oct 2026</span>
+        <span>Tue, 06 Oct 2026</span>
     </div>
 </div>
 
@@ -185,11 +185,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">This startup pays NYC residents to run air conditioners on free batteries</a></h2>
-    <p>Bonus: Every Electric’s batteries are beloved by household cats.</p>
+    <h2><a href="articles/article.html">LibreOffice says ‘no AI’ is now a software feature</a></h2>
+    <p>The maker of the open source document editor says it has no plans to add AI to its software's default configuration, citing user privacy.</p>
     <div class="card-footer">
-        <span>arstechnica</span>
-        <span>Fri, 02 Oct 2026</span>
+        <span>techcrunch</span>
+        <span>Tue, 06 Oct 2026</span>
     </div>
 </div>
 
@@ -198,11 +198,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">The 7-year-old Nvidia Shield TV is now $100 more expensive due to AI</a></h2>
-    <p>Initially launched in 2019, the Nvidia Shield TV Pro now retails for $299.99.</p>
+    <h2><a href="articles/article.html">Mistral’s new 1T model aims to leapfrog closed and open rivals</a></h2>
+    <p>French AI lab Mistral AI has released Mistral Large 4, a new large multimodal model aiming to leapfrog both American and Chinese rivals.</p>
     <div class="card-footer">
-        <span>arstechnica</span>
-        <span>Fri, 02 Oct 2026</span>
+        <span>techcrunch</span>
+        <span>Tue, 06 Oct 2026</span>
     </div>
 </div>
 
