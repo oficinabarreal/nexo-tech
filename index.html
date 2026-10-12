@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">2</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">4</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["IA/ML", "Tech", "Android"],
+            labels: ["Tech", "Android"],
             datasets: [{
-                data: [2, 6, 2],
+                data: [7, 3],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,16 +76,55 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="ai_ml">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">The maker of non-text AI model Jev valued at $7.5B just weeks after launch</a></h2>
-    <p>What has users and large corporations so excited about Jev is TypeSafe’s claim that it works significantly faster and uses far fewer tokens than LLMs.</p>
+    <h2><a href="articles/article.html">LineageOS 24 launches based on Android 17 with app redesigns and simple flash tool</a></h2>
+    <p>LineageOS 24 is now official, with the latest builds rolling out based on Android 17, bringing a surprise early release alongside a fresh coat of Material Design 3 Expressive paint, new WebUSB flashin</p>
+    <div class="card-footer">
+        <span>9to5google</span>
+        <span>Mon, 12 Oct 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Meta releases its first frontier model, Muse Wonder</a></h2>
+    <p>Where Muse Spark aimed to be a lightweight model that could perform at low latency, the Wonder models are larger and said to be more capable, with higher benchmark scores and better results on complex</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Fri, 09 Oct 2026</span>
+        <span>Mon, 12 Oct 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">This AI startup says it can generate permit-ready blueprints in minutes</a></h2>
+    <p>Blueprints AI, a bootstrapped startup based in Santa Monica, developed software that produces code-compliant construction blueprints from a photo, PDF, or sketch.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Mon, 12 Oct 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">The Fitbit Edge is for folks who don’t want to go totally screenless</a></h2>
+    <p>The Fitbit Edge may not be Google's best-kept fitness-tracking secret, but as of today, its existence is official. The tracker sits smack-dab between the recently launched Fitbit Air and the more powe</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-10-12T09:00</span>
     </div>
 </div>
 
@@ -99,6 +138,23 @@
     <div class="card-footer">
         <span>arstechnica</span>
         <span>Fri, 09 Oct 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="android">
+    <div class="card-header">
+        <span class="category category-android">Android</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Samsung is now rolling out Android 17 to these older Galaxy devices in the US</a></h2>
+    <p>Samsung’s One UI 9 update is now available for the Galaxy S24 and Z Fold/Flip 6, a month after the official rollout was initiated.
+
+
+
+ more…</p>
+    <div class="card-footer">
+        <span>9to5google</span>
+        <span>Mon, 12 Oct 2026</span>
     </div>
 </div>
 
@@ -151,58 +207,6 @@
     <div class="card-footer">
         <span>9to5google</span>
         <span>Mon, 05 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">These execs think voice AI hasn’t reached its ChatGPT moment yet</a></h2>
-    <p>Voice AI's often misses important points for its context layer, and causes the whole pipeline to break</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sun, 11 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Apple discloses deal to hire team and license tech from personalized podcast startup Huxe</a></h2>
-    <p>Is Apple hoping to get into the AI-generated podcast business?</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sat, 10 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream</a></h2>
-    <p>TechCrunch Disrupt 2026 takes place October 13-15 in San Francisco. Over 300 startups will show what they’ve built to 10,000 tech leaders. Plus, 250+ speakers are ready to share insights across 200+ s</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sat, 10 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Elon Musk intensifies attack on Ambani over Starlink India launch delay</a></h2>
-    <p>Elon Musk has accused Indian billionaire Mukesh Ambani of blocking competition.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sat, 10 Oct 2026</span>
     </div>
 </div>
 
