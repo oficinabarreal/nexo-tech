@@ -36,7 +36,7 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">2</div>
+            <div class="num">3</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Android"],
+            labels: ["Tech", "Android", "IA/ML"],
             datasets: [{
-                data: [6, 4],
+                data: [4, 5, 1],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -89,29 +89,16 @@
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="android">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-android">Android</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Colossal Biosciences announces new AI platform to help accelerate de-extinction efforts</a></h2>
-    <p>Colossal announced a new AI platform to help accelerate its de-extinction efforts and Peter Diamandis has launched a new fund to back startups who use it.</p>
+    <h2><a href="articles/article.html">Today’s Android app deals and freebies: Live or Die, Endling, Cat Lady, more</a></h2>
+    <p>Today’s best Google Play app and game deals are ready, including Live or Die 1: Survival Pro, Neighbours from Hell 1 Premium, Gun Tactics, Endling Extinction is Forever, Cat Lady, Braveland, and more.</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Wed, 14 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">TimeTeller puts our internal clocks at the center of personalized medicine</a></h2>
-    <p>German startup TimeTeller has developed a saliva test kit to help anyone understand their circadian rhythm; it aims to reduce side effects from cancer treatments.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Wed, 14 Oct 2026</span>
+        <span>9to5google</span>
+        <span>Thu, 15 Oct 2026</span>
     </div>
 </div>
 
@@ -215,6 +202,19 @@
     <div class="card-footer">
         <span>9to5google</span>
         <span>Wed, 07 Oct 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Elorian’s first AI model wants to reason with images, not just about them</a></h2>
+    <p>according to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Fri, 16 Oct 2026</span>
     </div>
 </div>
 
