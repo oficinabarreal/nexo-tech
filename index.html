@@ -40,7 +40,7 @@
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">2</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Android", "IA/ML"],
+            labels: ["Android", "Tech", "IA/ML"],
             datasets: [{
-                data: [7, 2, 1],
+                data: [2, 6, 2],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,45 +76,6 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Former OpenAI science lead launches Warp Science to automate wet labs with robots</a></h2>
-    <p>Wearing cameras and sensor gloves, the startup’s human chemists will train robots to perform various lab tasks.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Thu, 22 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Brick’s new app blocker is designed for bedtime doomscrolling</a></h2>
-    <p>Brick, the company behind the $59 gadget that blocks you from using apps on your phone, has launched a new device that's designed to help you cut back on doomscrolling in bed. The $129 Brick Night int</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-10-23T08:50</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">This Startup Is All In on Recursive Self-Improvement. Its Latest Model Is Scary Good</a></h2>
-    <p>Recursive makes the case that the benefits of using AI to build AI outweigh the risks.</p>
-    <div class="card-footer">
-        <span>wired</span>
-        <span>Wed, 21 Oct 2026</span>
-    </div>
-</div>
-
 <div class="card" data-category="android">
     <div class="card-header">
         <span class="category category-android">Android</span>
@@ -192,16 +153,42 @@
     </div>
 </div>
 
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.</a></h2>
+    <p>A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Sat, 24 Oct 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="tech_news">
     <div class="card-header">
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Pixelated 121: Is Googlebook the first real post-smartphone PC?</a></h2>
-    <p>Welcome to Pixelated episode 121. This week, Abner, Damien, and Will dive deep into Google’s new laptop platform, Googlebook. From hardware impressions across review units to making sense of the earli</p>
+    <h2><a href="articles/article.html">Startups don’t need to go viral to win customers</a></h2>
+    <p>At TechCrunch Disrupt last week, two founders and a VC discussed how to not just gain an early following but keep one.</p>
     <div class="card-footer">
-        <span>9to5google</span>
-        <span>Fri, 16 Oct 2026</span>
+        <span>techcrunch</span>
+        <span>Fri, 23 Oct 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026</a></h2>
+    <p>Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities of finding customers, building teams, sharpening a pitch, d</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Fri, 23 Oct 2026</span>
     </div>
 </div>
 
@@ -210,11 +197,24 @@
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvidia</a></h2>
-    <p>inDrive plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027.</p>
+    <h2><a href="articles/article.html">Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia</a></h2>
+    <p>The company plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027.</p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Fri, 23 Oct 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Mark Zuckerberg’s creative plan to pay California’s proposed billionaire tax without losing control of Meta</a></h2>
+    <p>A newly launched stock class being offered was partially engineered to help Meta founder and CEO Mark Zuckerberg pay the "billionaire's tax," should the measure be voted into law.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Thu, 22 Oct 2026</span>
     </div>
 </div>
 
