@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Gadgets", "Tech", "Android", "IA/ML"],
+            labels: ["Android", "Gadgets", "Tech", "IA/ML"],
             datasets: [{
-                data: [1, 6, 2, 1],
+                data: [3, 1, 4, 2],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,16 +76,33 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
+<div class="card" data-category="android">
+    <div class="card-header">
+        <span class="category category-android">Android</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Here are the latest Samsung Galaxy phones getting Android 17 updates</a></h2>
+    <p>One UI 9 is in its late-stage rollout phase, and a bunch of Galaxy phones have been added to the Android 17 availability list within the last few days.
+
+
+
+ more…</p>
+    <div class="card-footer">
+        <span>9to5google</span>
+        <span>Tue, 27 Oct 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="gadgets">
     <div class="card-header">
         <span class="category category-gadgets">Gadgets</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">The hottest AI wearables and gadgets you should know about</a></h2>
-    <p>We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.</p>
+    <h2><a href="articles/article.html">Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering</a></h2>
+    <p>Google DeepMind released Genie 4, a world model with real-time audio, more realistic simulations, and mid-simulation text prompts, in research preview for trusted testers.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Sun, 25 Oct 2026</span>
+        <span>Tue, 27 Oct 2026</span>
     </div>
 </div>
 
@@ -94,11 +111,41 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">The AI graveyard: a running list of projects and startups that didn’t make it</a></h2>
-    <p>From Apple's repeatedly delayed Siri AI to OpenAI's messy "super app" launch, here's a look at the AI projects that shut down or missed expectations.</p>
+    <h2><a href="articles/article.html">Apple rolls out iOS 27.2 with new Siri AI languages and security fixes</a></h2>
+    <p>The latest Apple software update for iPhones and iPads includes new features and important security updates.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Sat, 24 Oct 2026</span>
+        <span>Tue, 27 Oct 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Dallas firm Disruptive closes $10bn fund to back AI and defence startups</a></h2>
+    <p>Disruptive, a venture capital firm based in Dallas, has raised a $10bn fund to invest in AI, defence and software startups, Bloomberg reported on Tuesday. The new money roughly doubles the assets the </p>
+    <div class="card-footer">
+        <span>the_next_web_ai</span>
+        <span>Tue, 27 Oct 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Google says Gemini 4 Argon ranks well behind Claude and GPT-6 for Android coding</a></h2>
+    <p>Google has updated its Android Bench list for showing how good AI models are at Android coding assistance, with Gemini 4 Argon ranking way behind that of the latest Claude and GPT models.
+
+
+
+ more…</p>
+    <div class="card-footer">
+        <span>9to5google</span>
+        <span>Mon, 26 Oct 2026</span>
     </div>
 </div>
 
@@ -149,42 +196,16 @@
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">This startup’s self-driving excavators help dig up $600M in new funding</a></h2>
-    <p>Bedrock Robotics, which is now valued at $4.1 billion, is particularly focused on autonomous excavators, in part because of a growing shortage of skilled operators.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Mon, 26 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Grok releases the first seven minutes of its AI-generated ‘Odyssey’</a></h2>
-    <p>The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sun, 25 Oct 2026</span>
-    </div>
-</div>
-
 <div class="card" data-category="ai_ml">
     <div class="card-header">
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">AI delivers ‘zero financial payoff’ to most companies, Apollo economist says</a></h2>
-    <p>"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech."</p>
+    <h2><a href="articles/article.html">Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?</a></h2>
+    <p>TechCrunch spoke to the MIT computer scientist charged with explaining OpenAI's latest mind-bending discovery</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Sun, 25 Oct 2026</span>
+        <span>Tue, 27 Oct 2026</span>
     </div>
 </div>
 
@@ -193,24 +214,11 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">T-Mobile’s new plans include swappable subscription perks</a></h2>
-    <p>T-Mobile is launching new "T-Mix" plans that bundle wireless service with subscriptions to services like Netflix, Apple TV, YouTube Premium, Xbox Game Pass Ultimate, device promotions, and more, as re</p>
+    <h2><a href="articles/article.html">Meta AI director Rohit Patel leaves to take on Microsoft Office and Google Workspace</a></h2>
+    <p>Rohit Patel is departing Meta after eight years working on AI evaluations and reinforcement learning, TechCrunch has exclusively learned. His startup, Ndoc, aims to take on Microsoft Office Suite.</p>
     <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-10-26T11:39</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Microsoft’s new Surface Laptop Ultra update fixes reboot and display bugs</a></h2>
-    <p>Microsoft's Surface Laptop Ultra was blighted by some nuisance bugs at launch, but now the company has released some new firmware to resolve them. The October 22nd release addresses three notable issu</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-10-26T11:28</span>
+        <span>techcrunch</span>
+        <span>Tue, 27 Oct 2026</span>
     </div>
 </div>
 
