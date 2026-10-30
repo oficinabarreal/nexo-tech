@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">4</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">6</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Android", "IA/ML", "Tech"],
+            labels: ["Tech", "Gadgets", "Android", "IA/ML"],
             datasets: [{
-                data: [2, 3, 5],
+                data: [4, 1, 2, 3],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,6 +76,32 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">TBC launches Mischief, an AI video model shaped by brain cells</a></h2>
+    <p>San Francisco’s Biological Computing Co. released TBC Mischief 1, an image-to-video model built on Wan 2.2. It says insights from living neurons make it about five times faster at the same quality, pr</p>
+    <div class="card-footer">
+        <span>the_next_web_ai</span>
+        <span>Fri, 30 Oct 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="gadgets">
+    <div class="card-header">
+        <span class="category category-gadgets">Gadgets</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Will Galaxy S27 Ultra and Pixel 12 mark the end of the flagship era of smartphones?</a></h2>
+    <p>Like most Android fans, you probably enjoy having the latest and greatest smartphone buried in your pocket. The best camera, the best display, the fastest processor, and of course, as much RAM as any </p>
+    <div class="card-footer">
+        <span>9to5google</span>
+        <span>Fri, 30 Oct 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="android">
     <div class="card-header">
         <span class="category category-android">Android</span>
@@ -93,16 +119,16 @@
     </div>
 </div>
 
-<div class="card" data-category="ai_ml">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Ex-Palantir execs launch Dream with $17M from a16z to build AI world models for construction</a></h2>
-    <p>Dream is grounded in real physics and construction standards. Just as LLMs learn from text, Dream's world model is trained on more than 100 million square feet of building data gathered from permit ar</p>
+    <h2><a href="articles/article.html">Can AI data centers be mass-produced like cars? This startup aims to find out</a></h2>
+    <p>Runware is building a factory to turn out prefabricated AI data centers on an assembly line. The real test will be whether it can deliver at that scale.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Thu, 29 Oct 2026</span>
+        <span>Fri, 30 Oct 2026</span>
     </div>
 </div>
 
@@ -149,33 +175,16 @@
     </div>
 </div>
 
-<div class="card" data-category="android">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-android">Android</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Some Galaxy S24, S25 owners say Samsung’s latest update is wrecking battery life</a></h2>
-    <p>Samsung’s latest Android 17-based One UI 9 update seems to be causing headaches for some Galaxy S24 and S25 owners, as battery life has gotten considerably worse following the “upgrade.”
-
-
-
- more…</p>
+    <h2><a href="articles/article.html">The delightfully messy state of Apple gadgets</a></h2>
+    <p>The iPhone has more screens! The MacBook has a touchscreen! The HomeView does CarPlay apps! For the first time in a long time, Apple is in a period of unabashed gadget experimentation, and while the f</p>
     <div class="card-footer">
-        <span>9to5google</span>
-        <span>Thu, 22 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Agent identity startup Mintive lands Cowboy Ventures, Coatue, angels Jeff Dean, Andrej Karpathy</a></h2>
-    <p>Mintive was founded by two engineers who have been working on AI for decades through Google Brain and Coursera. It's platform promises to help IT easily control enterprise agents.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Thu, 29 Oct 2026</span>
+        <span>theverge</span>
+        <span>2026-10-30T13:25</span>
     </div>
 </div>
 
@@ -184,37 +193,24 @@
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Wabi, the AI agent that builds mini apps, now valued at $1.25B after latest round</a></h2>
-    <p>On Thursday, AI app Wabi, now describing itself as a "personal agent," said it has raised $55 million at a $1.25 billion valuation.</p>
+    <h2><a href="articles/article.html">Review: You Can See Everything blurs the view of Elizabeth Holmes' deceit</a></h2>
+    <p>Disgraced founder of Theranos has some people falling for her act all over again.</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Thu, 29 Oct 2026</span>
+        <span>arstechnica</span>
+        <span>Fri, 30 Oct 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="android">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-android">Android</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity</a></h2>
-    <p>Mistral says its new model can afford organizations a kind of control over its cyber defenses that closed models can't.</p>
+    <h2><a href="articles/article.html">Samsung S95H OLED TV Review (2026)</a></h2>
+    <p>It performs great, with rich texture and high brightness, but faces new competition when it comes to color dominance.</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Thu, 29 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Upwind raises $400M after walking away from Datadog acquisition offer</a></h2>
-    <p>The cloud security startup raised a Series C at a $3.8B valuation, instead of selling itself for the same price.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Wed, 28 Oct 2026</span>
+        <span>wired</span>
+        <span>Fri, 30 Oct 2026</span>
     </div>
 </div>
 
