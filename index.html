@@ -40,7 +40,7 @@
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">6</div>
+            <div class="num">5</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Gadgets", "Android", "IA/ML"],
+            labels: ["Gadgets", "Android", "Tech", "IA/ML"],
             datasets: [{
-                data: [4, 1, 2, 3],
+                data: [1, 2, 6, 1],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,19 +76,6 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">TBC launches Mischief, an AI video model shaped by brain cells</a></h2>
-    <p>San Francisco’s Biological Computing Co. released TBC Mischief 1, an image-to-video model built on Wan 2.2. It says insights from living neurons make it about five times faster at the same quality, pr</p>
-    <div class="card-footer">
-        <span>the_next_web_ai</span>
-        <span>Fri, 30 Oct 2026</span>
-    </div>
-</div>
-
 <div class="card" data-category="gadgets">
     <div class="card-header">
         <span class="category category-gadgets">Gadgets</span>
@@ -124,11 +111,37 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Can AI data centers be mass-produced like cars? This startup aims to find out</a></h2>
-    <p>Runware is building a factory to turn out prefabricated AI data centers on an assembly line. The real test will be whether it can deliver at that scale.</p>
+    <h2><a href="articles/article.html">OpenAI reportedly lowers funding target for new round</a></h2>
+    <p>OpenAI’s latest funding round doesn't seem to be living up to expectations.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Fri, 30 Oct 2026</span>
+        <span>Sat, 31 Oct 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Apple Intelligence is finally coming to China with iOS 27.3</a></h2>
+    <p>Apple will launch Apple Intelligence in China with iOS 27.3, the company announced on its Chinese newsroom website, as reported by MacRumors. The Apple Intelligence features will be available first in</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-10-30T18:32</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Exclusive details about Akai’s MPC Sample Key</a></h2>
+    <p>Akai teased its new MPC Sample Key on Instagram earlier this week, and said it plans to open-source its software so the modding community can hack it to their hearts' delight. While there's no word ye</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-10-30T17:01</span>
     </div>
 </div>
 
@@ -158,6 +171,19 @@
     </div>
 </div>
 
+<div class="card" data-category="android">
+    <div class="card-header">
+        <span class="category category-android">Android</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">5 Samsung One UI features you won't get with other Android phones</a></h2>
+    <p>Samsung doesn't just make great phone and tablet hardware; its One UI is also a standout, offering many features you just can't get elsewhere.</p>
+    <div class="card-footer">
+        <span>engadget</span>
+        <span>Sat, 31 Oct 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="ai_ml">
     <div class="card-header">
         <span class="category category-ai_ml">IA/ML</span>
@@ -175,41 +201,15 @@
     </div>
 </div>
 
-<div class="card" data-category="ai_ml">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">The delightfully messy state of Apple gadgets</a></h2>
-    <p>The iPhone has more screens! The MacBook has a touchscreen! The HomeView does CarPlay apps! For the first time in a long time, Apple is in a period of unabashed gadget experimentation, and while the f</p>
+    <h2><a href="articles/article.html">Salesforce’s M&A spree continues with a reported $375M deal for defense tech startup Rune</a></h2>
+    <p>The AI logistics startup will bolster the CRM giant's Missionforce defense platform.</p>
     <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-10-30T13:25</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Review: You Can See Everything blurs the view of Elizabeth Holmes' deceit</a></h2>
-    <p>Disgraced founder of Theranos has some people falling for her act all over again.</p>
-    <div class="card-footer">
-        <span>arstechnica</span>
-        <span>Fri, 30 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="android">
-    <div class="card-header">
-        <span class="category category-android">Android</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Samsung S95H OLED TV Review (2026)</a></h2>
-    <p>It performs great, with rich texture and high brightness, but faces new competition when it comes to color dominance.</p>
-    <div class="card-footer">
-        <span>wired</span>
+        <span>techcrunch</span>
         <span>Fri, 30 Oct 2026</span>
     </div>
 </div>
