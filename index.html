@@ -40,7 +40,7 @@
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">5</div>
+            <div class="num">4</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Gadgets", "Android", "Tech", "IA/ML"],
+            labels: ["Tech", "Gadgets", "Android", "IA/ML"],
             datasets: [{
-                data: [1, 1, 7, 1],
+                data: [5, 1, 1, 3],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,6 +76,19 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Apple’s ‘Ultra’ smart home robot might have to wait until 2028</a></h2>
+    <p>Apple has reportedly delayed the launch of its rumored smart home robot until next year at the earliest or possibly even 2028, according to The Information. It says the robot's hardware "has been fini</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-11-02T12:06</span>
+    </div>
+</div>
+
 <div class="card" data-category="gadgets">
     <div class="card-header">
         <span class="category category-gadgets">Gadgets</span>
@@ -106,58 +119,6 @@
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">OpenAI reportedly lowers funding target for new round</a></h2>
-    <p>OpenAI’s latest funding round doesn't seem to be living up to expectations.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sat, 31 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">The ‘Pain in the Ass’ Math That Could Save Vibe Coding From Itself</a></h2>
-    <p>A new startup called &Truth is joining the race to automate formal verification, a painstaking process that uses math to prove software works as intended.</p>
-    <div class="card-footer">
-        <span>wired</span>
-        <span>Thu, 29 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in the Open-Weight Race</a></h2>
-    <p>The French AI lab claims its latest release matches or outperforms even the best models from DeepSeek and Z.ai in coding and cybersecurity.</p>
-    <div class="card-footer">
-        <span>wired</span>
-        <span>Thu, 29 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Salesforce to buy Rune in its most significant national security deal</a></h2>
-    <p>Salesforce has agreed to buy Rune Technologies. The US startup’s AI software helps the military plan supplies near the front line. Salesforce announced the deal on Thursday. Rune will join Missionforc</p>
-    <div class="card-footer">
-        <span>the_next_web_ai</span>
-        <span>Sun, 01 Nov 2026</span>
-    </div>
-</div>
-
 <div class="card" data-category="ai_ml">
     <div class="card-header">
         <span class="category category-ai_ml">IA/ML</span>
@@ -175,16 +136,16 @@
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Salesforce’s M&A spree continues with a reported $375M deal for defense tech startup Rune</a></h2>
-    <p>The AI logistics startup will bolster the CRM giant's Missionforce defense platform.</p>
+    <h2><a href="articles/article.html">Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs</a></h2>
+    <p>Musk recently referred to Grok Bot as having "the fastest growth of a product that I've ever seen in my life."</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Fri, 30 Oct 2026</span>
+        <span>Mon, 02 Nov 2026</span>
     </div>
 </div>
 
@@ -193,11 +154,24 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says</a></h2>
-    <p>Blackstone's forecast is just a prediction, but naturally, a high junk rating would make it more difficult and costlier for Anthropic to raise the money to keep funding its massive spending that has u</p>
+    <h2><a href="articles/article.html">Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition</a></h2>
+    <p>Two startups tackling the data center water problem are joining forces in a $16 million deal.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Fri, 30 Oct 2026</span>
+        <span>Mon, 02 Nov 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">OpenAI is finally merging ChatGPT’s Chat and Work tabs</a></h2>
+    <p>OpenAI said that ChatGPT and Codex will draw usage from the same allocation pool after this change.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Mon, 02 Nov 2026</span>
     </div>
 </div>
 
@@ -206,11 +180,37 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">HomePod Mini 2 first look: Three things I love and one disappointment</a></h2>
-    <p>When I first heard about the new $149 HomePod Mini 2 at Apple's Welcome Home event last month, I was disappointed. It's been six years since Apple launched its entry-level smart speaker, and all it go</p>
+    <h2><a href="articles/article.html">Ford launches a ‘privacy promise’ and explains how and why it uses customer data</a></h2>
+    <p>Ford said it's making an "explicit commitment" to its customers that "their vehicle data is safe" with the company.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Mon, 02 Nov 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Anthropic clamps down on Claude’s AI video game clones</a></h2>
+    <p>Anthropic has updated Claude Code's system prompt to prevent the AI tool from being used to recreate existing video games, as reported by Tom's Hardware. Retro gaming is currently being overrun with A</p>
     <div class="card-footer">
         <span>theverge</span>
-        <span>2026-11-01T09:00</span>
+        <span>2026-11-02T13:56</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">An AI Agent Injected Drugs Into a Live Mouse’s Brain</a></h2>
+    <p>A biotech startup let an agent choose a gene therapy and successfully inject the treatment, offering a startling glimpse of the future of research labs.</p>
+    <div class="card-footer">
+        <span>wired</span>
+        <span>Sat, 31 Oct 2026</span>
     </div>
 </div>
 
