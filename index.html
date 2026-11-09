@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">3</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">5</div>
+            <div class="num">4</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Gadgets", "Android", "Tech", "IA/ML"],
+            labels: ["Tech", "IA/ML", "Gadgets"],
             datasets: [{
-                data: [2, 1, 3, 4],
+                data: [6, 3, 1],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,29 +76,16 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="gadgets">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-gadgets">Gadgets</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Will Galaxy S27 Ultra and Pixel 12 mark the end of the flagship era of smartphones?</a></h2>
-    <p>Like most Android fans, you probably enjoy having the latest and greatest smartphone buried in your pocket. The best camera, the best display, the fastest processor, and of course, as much RAM as any </p>
+    <h2><a href="articles/article.html">AI hardware startup Nominal triples valuation to $3B in 8 months</a></h2>
+    <p>Nominal, a startup that offers an AI platform for hardware engineering and claims Anduril as a major customer, has raised another big round of financing that triples its valuation.</p>
     <div class="card-footer">
-        <span>9to5google</span>
-        <span>Fri, 30 Oct 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="android">
-    <div class="card-header">
-        <span class="category category-android">Android</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Samsung One UI 9.5 beta may be coming soon: Here's how to sign up for the program</a></h2>
-    <p>Samsung appears to be preparing the One UI 9.5 beta program ahead of an expected 2027 launch. Here's what to do if you want to test Samsung's latest OS.</p>
-    <div class="card-footer">
-        <span>engadget</span>
-        <span>Sun, 08 Nov 2026</span>
+        <span>techcrunch</span>
+        <span>Mon, 09 Nov 2026</span>
     </div>
 </div>
 
@@ -107,24 +94,37 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation</a></h2>
-    <p>OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks.</p>
+    <h2><a href="articles/article.html">Uber launches parking service following SpotHero acquisition, with an eye on robotaxis</a></h2>
+    <p>Uber Parking is the latest example of the company offering products beyond its core ride-hailing service.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Fri, 06 Nov 2026</span>
+        <span>Mon, 09 Nov 2026</span>
     </div>
 </div>
 
-<div class="card" data-category="ai_ml">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Hundreds of Artex AI hacking tools found publicly exposed to the web</a></h2>
-    <p>Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.</p>
+    <h2><a href="articles/article.html">Nominal raises $240M at $3B, tripling its value since March</a></h2>
+    <p>Nominal, whose software helps engineers test and analyse hardware such as aircraft, satellites and robots, has raised $240M in a Series C round at a $3B valuation. Lightspeed Venture Partners led the </p>
+    <div class="card-footer">
+        <span>the_next_web_ai</span>
+        <span>Mon, 09 Nov 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Meta releases Muse Ember, a new lightweight model for agent execution</a></h2>
+    <p>At 10 cents per million input tokens, Ember is significantly cheaper than frontier competitors like Haiku and Luna.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Fri, 06 Nov 2026</span>
+        <span>Mon, 09 Nov 2026</span>
     </div>
 </div>
 
@@ -133,11 +133,37 @@
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Apple’s M5 MacBook Air is down to its lowest price since July</a></h2>
-    <p>The latest 13-inch MacBook Air is currently available for $1,099.99, marking the second time we’ve seen this $200 discount following the company’s hefty price increases over the summer. Although the b</p>
+    <h2><a href="articles/article.html">The global pledge to use AI for climate good is a cruel joke</a></h2>
+    <p>At this point, reading through the latest splashy pledge to use AI for the good of the environment feels like downing a nonalcoholic beer. Admittedly, I'm suspicious from the onset. How can this be go</p>
     <div class="card-footer">
         <span>theverge</span>
-        <span>2026-11-08T11:00</span>
+        <span>2026-11-09T16:13</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Anthropic launches new Claude Fable and Mythos 5.2 models</a></h2>
+    <p>Anthropic is announcing two new models today: Claude Fable 5.2 and Claude Mythos 5.2, which it says are designed to take on "daunting" technical challenges. The company claims the new models show impr</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-11-09T14:00</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Instagram’s Effect Builder makes new filters from AI prompts</a></h2>
+    <p>After expanding its Edits app to macOS last week, Instagram's next move is launching this Effect Builder that generates custom filters for your Stories posts with AI. Available now for US residents wh</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-11-09T13:07</span>
     </div>
 </div>
 
@@ -146,11 +172,11 @@
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Chatbots might be coming to Apple’s HomeView</a></h2>
-    <p>Code in the iOS 27.3 beta suggests that Apple could add support for chatbots to its smart home hub. There's a flag listed for a "Conversational Apps" category. While there are no details about what ap</p>
+    <h2><a href="articles/article.html">Bikers and Bug-Lovers Join Forces to Fight a New Google Data Center</a></h2>
+    <p>As data center protests break out across Europe, a mismatched band of campaigners is trying to block Google from building a sprawling new facility east of London.</p>
     <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-11-08T10:00</span>
+        <span>wired</span>
+        <span>Mon, 09 Nov 2026</span>
     </div>
 </div>
 
@@ -174,32 +200,6 @@
     </div>
     <h2><a href="articles/article.html">6 Best VPN Services (2026), Tested and Reviewed</a></h2>
     <p>Every VPN says it’s the best, but only some of them are telling the truth.</p>
-    <div class="card-footer">
-        <span>wired</span>
-        <span>Thu, 05 Nov 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Exclusive: Aina’s Smart Ring Wants to Be a Remote Control for Your AI Agent</a></h2>
-    <p>The startup Aina bets you won’t need to rely on your phone to control virtual assistants. It’s making a smart ring that lets you control the actions of your autonomous agents with one tap.</p>
-    <div class="card-footer">
-        <span>wired</span>
-        <span>Thu, 05 Nov 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Finding New Drugs Is Laborious. This AI Startup Is Skipping The Lab Work</a></h2>
-    <p>Potential Sciences, a startup backed by the UK government, is betting that training AI models on computer-generated biochemical data can speed up the plodding process of developing new drugs.</p>
     <div class="card-footer">
         <span>wired</span>
         <span>Thu, 05 Nov 2026</span>
