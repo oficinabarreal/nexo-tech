@@ -40,7 +40,7 @@
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">2</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "IA/ML", "Android"],
+            labels: ["Tech", "Android", "Gadgets"],
             datasets: [{
-                data: [4, 1, 5],
+                data: [4, 5, 1],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -112,19 +112,6 @@
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Fri, 13 Nov 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you</a></h2>
-    <p>After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 a</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-11-13T15:45</span>
     </div>
 </div>
 
@@ -190,6 +177,19 @@
     <div class="card-footer">
         <span>9to5google</span>
         <span>Tue, 10 Nov 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="gadgets">
+    <div class="card-header">
+        <span class="category category-gadgets">Gadgets</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">The tech products we enthusiastically recommend this holiday season</a></h2>
+    <p>We've been reviewing a bunch of new gadgets at TechCrunch this year, and we have some clear favorites to share for your Black Friday shopping and beyond.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Sun, 15 Nov 2026</span>
     </div>
 </div>
 
