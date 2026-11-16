@@ -40,7 +40,7 @@
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">2</div>
+            <div class="num">4</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Android", "Gadgets"],
+            labels: ["Tech", "IA/ML", "Android"],
             datasets: [{
-                data: [4, 5, 1],
+                data: [4, 1, 5],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -89,16 +89,16 @@
     </div>
 </div>
 
-<div class="card" data-category="tech_news">
+<div class="card" data-category="ai_ml">
     <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
+        <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">The AI graveyard: a running list of projects and startups that didn’t make it</a></h2>
-    <p>From Apple's repeatedly delayed Siri AI to OpenAI's messy "super app" launch, here's a look at the AI projects that shut down or missed expectations.</p>
+    <h2><a href="articles/article.html">OpenAI releases a new image classifier and ChatGPT warnings to combat CSAM</a></h2>
+    <p>ChatGPT will ban an account trying to access CSAM content for 24 hours as a warning.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Sat, 14 Nov 2026</span>
+        <span>Mon, 16 Nov 2026</span>
     </div>
 </div>
 
@@ -107,11 +107,50 @@
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say</a></h2>
-    <p>Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.</p>
+    <h2><a href="articles/article.html">Apple is testing daily usage limits for more complex Siri AI interactions</a></h2>
+    <p>Apple released betas of iOS 27.3, iPadOS 27.3, and macOS 27.3 today, and the company is using the update to test new per device daily usage limits for some Siri AI and Apple Intelligence features, acc</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 13 Nov 2026</span>
+        <span>theverge</span>
+        <span>2026-11-16T14:24</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Apple is adding face unlock to the iPhone Duo — without new hardware</a></h2>
+    <p>Apple is working on a face unlock feature for the iPhone Duo that uses the front-facing camera for authentication, and it's already testing it with the new iOS 27.3 beta released today, as reported by</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-11-16T13:44</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Google’s AdMob lets AI agents like Claude Code set up app ads</a></h2>
+    <p>Google has released AdMob agent skills that let AI coding agents, including Claude Code, Codex and Cursor, add and check ad code in mobile apps. A Gemini-built assistant, Ask AdMob, and an MCP server </p>
+    <div class="card-footer">
+        <span>the_next_web_ai</span>
+        <span>Mon, 16 Nov 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="android">
+    <div class="card-header">
+        <span class="category category-android">Android</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Samsung’s ‘Galaxy Studio’ headphones leak with touch controls, two colors</a></h2>
+    <p>We’re only a couple of months away from our next Galaxy Unpacked, and while the expanded Galaxy S27 series is practically guaranteed to show up, the real fun tends to lie in whatever other gadgets sho</p>
+    <div class="card-footer">
+        <span>9to5google</span>
+        <span>Mon, 16 Nov 2026</span>
     </div>
 </div>
 
@@ -164,45 +203,6 @@
     <div class="card-footer">
         <span>9to5google</span>
         <span>Wed, 11 Nov 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="android">
-    <div class="card-header">
-        <span class="category category-android">Android</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">One UI 9.5 might bring Pixel 11’s ‘Rambler’ feature to Samsung Keyboard before Google’s</a></h2>
-    <p>The Pixel 11 launched with one AI tool most people got on board with, called “Rambler.” It’s a transcription tool that overhauls and cleans up voice-to-text messages. Too bad this Rambler clone will o</p>
-    <div class="card-footer">
-        <span>9to5google</span>
-        <span>Tue, 10 Nov 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="gadgets">
-    <div class="card-header">
-        <span class="category category-gadgets">Gadgets</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">The tech products we enthusiastically recommend this holiday season</a></h2>
-    <p>We've been reviewing a bunch of new gadgets at TechCrunch this year, and we have some clear favorites to share for your Black Friday shopping and beyond.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sun, 15 Nov 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">AI agent startup LangChain hits $3B valuation</a></h2>
-    <p>LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 13 Nov 2026</span>
     </div>
 </div>
 
