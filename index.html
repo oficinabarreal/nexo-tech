@@ -40,7 +40,7 @@
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">3</div>
+            <div class="num">5</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Android", "Gadgets", "Tech", "IA/ML"],
+            labels: ["Tech", "Android", "Gadgets", "IA/ML"],
             datasets: [{
-                data: [3, 1, 4, 2],
+                data: [6, 2, 1, 1],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,6 +76,32 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Ladybird, the first new browser engine in years, is now available to test</a></h2>
+    <p>Ladybird, an independent web browser with a built-from-scratch engine, is finally available for testing. On Monday, Ladybird developer Andreas Kling announced that the browser is launching in alpha on</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-11-23T17:38</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Claude AI can review pull requests and ship fixes on its own now</a></h2>
+    <p>Anthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull reques</p>
+    <div class="card-footer">
+        <span>theverge</span>
+        <span>2026-11-23T15:00</span>
+    </div>
+</div>
+
 <div class="card" data-category="android">
     <div class="card-header">
         <span class="category category-android">Android</span>
@@ -93,16 +119,16 @@ The Galaxy S</p>
     </div>
 </div>
 
-<div class="card" data-category="android">
+<div class="card" data-category="tech_news">
     <div class="card-header">
-        <span class="category category-android">Android</span>
+        <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance</a></h2>
-    <p>Signal is limiting users' ability to take screenshots in both its Android and iOS apps.</p>
+    <h2><a href="articles/article.html">Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes</a></h2>
+    <p>As AI-generated code piles up, Anthropic's new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Sat, 21 Nov 2026</span>
+        <span>Mon, 23 Nov 2026</span>
     </div>
 </div>
 
@@ -111,11 +137,24 @@ The Galaxy S</p>
         <span class="category category-gadgets">Gadgets</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Review: Godzilla Minus Zero joins the list of truly stellar sequels</a></h2>
-    <p>Director Takashi Yamazaki ups the ante by pitting Godzilla against one of the monster's greatest foes</p>
+    <h2><a href="articles/article.html">Review: Godzilla Minus Zero joins the ranks of truly stellar sequels</a></h2>
+    <p>Director Takashi Yamazaki ups the ante, pitting Godzilla against one of the monster's greatest foes.</p>
     <div class="card-footer">
         <span>arstechnica</span>
         <span>Sat, 21 Nov 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Nvidia Is Powering Brain-Computer Interfaces Now</a></h2>
+    <p>Brain-computer interface company Paradromics is using Nvidia’s computing hardware and software to process brain data.</p>
+    <div class="card-footer">
+        <span>wired</span>
+        <span>Mon, 23 Nov 2026</span>
     </div>
 </div>
 
@@ -141,28 +180,11 @@ The Galaxy S</p>
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Samsung releases its next major update, One UI 9.5, in beta for Galaxy S26 – what’s new</a></h2>
-    <p>Samsung is officially launching its One UI 9.5 beta program today on Galaxy S26 series devices, and it’s packing some features we didn’t expect.
-
-
-
- more…</p>
+    <h2><a href="articles/article.html">Supertake raises $20M to let AI agents turn your market predictions into stock portfolios</a></h2>
+    <p>Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.</p>
     <div class="card-footer">
-        <span>9to5google</span>
-        <span>Wed, 18 Nov 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">OpenAI releases GPT-6.2 Astra to regain performance lead from Claude Fable 5.2</a></h2>
-    <p>The frontier model races continues. A week after the launch of Anthropic’s Claude 5.2 and Google’s Gemini 4 Hydrogen, OpenAI is releasing GPT-6.2 Astra and Sol as a “new standard for professional work</p>
-    <div class="card-footer">
-        <span>9to5google</span>
-        <span>Tue, 17 Nov 2026</span>
+        <span>techcrunch</span>
+        <span>Mon, 23 Nov 2026</span>
     </div>
 </div>
 
@@ -171,11 +193,11 @@ The Galaxy S</p>
         <span class="category category-ai_ml">IA/ML</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">TechCrunch Mobility: A/B testing robots vs. humans</a></h2>
-    <p>Welcome back to TechCrunch Mobility, your hub for the future of transportation and, now more than ever, the role AI is playing in it.</p>
+    <h2><a href="articles/article.html">Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO</a></h2>
+    <p>The public hearing follows bipartisan calls for Huang to testify about the affair with the suspected Chinese spy.</p>
     <div class="card-footer">
         <span>techcrunch</span>
-        <span>Sun, 22 Nov 2026</span>
+        <span>Mon, 23 Nov 2026</span>
     </div>
 </div>
 
@@ -184,37 +206,11 @@ The Galaxy S</p>
         <span class="category category-tech_news">Tech</span>
         <span class="trend">🔥 5</span>
     </div>
-    <h2><a href="articles/article.html">Is selling an AI version of your face to this microdrama startup the future of Hollywood?</a></h2>
-    <p>An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.</p>
+    <h2><a href="articles/article.html">The Apple Watch Series 12 is cheaper than ever ahead of Black Friday</a></h2>
+    <p>If you’re still sporting an Apple Watch that launched five or so years ago, now is a good time to upgrade. Apple’s latest smartwatch, the 42mm Apple Watch Series 12 with Wi-Fi and GPS connectivity, ha</p>
     <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Sat, 21 Nov 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.</a></h2>
-    <p>Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 20 Nov 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too</a></h2>
-    <p>Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Fri, 20 Nov 2026</span>
+        <span>theverge</span>
+        <span>2026-11-23T16:36</span>
     </div>
 </div>
 
