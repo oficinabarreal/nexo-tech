@@ -36,11 +36,11 @@
             <div class="label">Artículos hoy</div>
         </div>
         <div class="stat">
-            <div class="num">4</div>
+            <div class="num">3</div>
             <div class="label">Categorías</div>
         </div>
         <div class="stat">
-            <div class="num">5</div>
+            <div class="num">3</div>
             <div class="label">Fuentes</div>
         </div>
     </section>
@@ -55,9 +55,9 @@
     new Chart(document.getElementById('categoryChart'), {
         type: 'doughnut',
         data: {
-            labels: ["Tech", "Android", "Gadgets", "IA/ML"],
+            labels: ["Android", "Tech", "IA/ML"],
             datasets: [{
-                data: [6, 2, 1, 1],
+                data: [2, 7, 1],
                 backgroundColor: ['#ff0044', '#00ccff', '#00ff88', '#ffaa00', '#aa44ff']
             }]
         },
@@ -76,32 +76,6 @@
         <h2>🔥 Últimas noticias</h2>
         <div class="card-grid">
             
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Ladybird, the first new browser engine in years, is now available to test</a></h2>
-    <p>Ladybird, an independent web browser with a built-from-scratch engine, is finally available for testing. On Monday, Ladybird developer Andreas Kling announced that the browser is launching in alpha on</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-11-23T17:38</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Claude AI can review pull requests and ship fixes on its own now</a></h2>
-    <p>Anthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull reques</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-11-23T15:00</span>
-    </div>
-</div>
-
 <div class="card" data-category="android">
     <div class="card-header">
         <span class="category category-android">Android</span>
@@ -129,19 +103,6 @@ The Galaxy S</p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Mon, 23 Nov 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="gadgets">
-    <div class="card-header">
-        <span class="category category-gadgets">Gadgets</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Review: Godzilla Minus Zero joins the ranks of truly stellar sequels</a></h2>
-    <p>Director Takashi Yamazaki ups the ante, pitting Godzilla against one of the monster's greatest foes.</p>
-    <div class="card-footer">
-        <span>arstechnica</span>
-        <span>Sat, 21 Nov 2026</span>
     </div>
 </div>
 
@@ -175,6 +136,71 @@ The Galaxy S</p>
     </div>
 </div>
 
+<div class="card" data-category="ai_ml">
+    <div class="card-header">
+        <span class="category category-ai_ml">IA/ML</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Even the best AI agents struggle with everyday life</a></h2>
+    <p>As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new prob</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Tue, 24 Nov 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Maple raises $5.3M to build AI products that protect your data, even from itself</a></h2>
+    <p>The startup's encrypted AI architecture is designed to prevent even the company itself from accessing users' private data.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Tue, 24 Nov 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Anthropic shares fall below IPO price, a worrying sign for AI startups</a></h2>
+    <p>Anthropic’s post-IPO slump could put pressure on AI startup valuations.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Tue, 24 Nov 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Uber and Nuro begin driverless testing of Lucid robotaxis ahead of 2027 launch</a></h2>
+    <p>Uber and Nuro have started testing driverless Lucid Gravity SUVs on public streets in the San Francisco Bay Area.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Tue, 24 Nov 2026</span>
+    </div>
+</div>
+
+<div class="card" data-category="tech_news">
+    <div class="card-header">
+        <span class="category category-tech_news">Tech</span>
+        <span class="trend">🔥 5</span>
+    </div>
+    <h2><a href="articles/article.html">Amazon’s Decart acquisition is a bet on using software to narrow the silicon gap with Nvidia</a></h2>
+    <p>Amazon’s decision to acquire Decart for a reported $7.5 billion is part of its efforts to improve the efficiency of its Trainium chips.</p>
+    <div class="card-footer">
+        <span>techcrunch</span>
+        <span>Tue, 24 Nov 2026</span>
+    </div>
+</div>
+
 <div class="card" data-category="tech_news">
     <div class="card-header">
         <span class="category category-tech_news">Tech</span>
@@ -185,32 +211,6 @@ The Galaxy S</p>
     <div class="card-footer">
         <span>techcrunch</span>
         <span>Mon, 23 Nov 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="ai_ml">
-    <div class="card-header">
-        <span class="category category-ai_ml">IA/ML</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO</a></h2>
-    <p>The public hearing follows bipartisan calls for Huang to testify about the affair with the suspected Chinese spy.</p>
-    <div class="card-footer">
-        <span>techcrunch</span>
-        <span>Mon, 23 Nov 2026</span>
-    </div>
-</div>
-
-<div class="card" data-category="tech_news">
-    <div class="card-header">
-        <span class="category category-tech_news">Tech</span>
-        <span class="trend">🔥 5</span>
-    </div>
-    <h2><a href="articles/article.html">The Apple Watch Series 12 is cheaper than ever ahead of Black Friday</a></h2>
-    <p>If you’re still sporting an Apple Watch that launched five or so years ago, now is a good time to upgrade. Apple’s latest smartwatch, the 42mm Apple Watch Series 12 with Wi-Fi and GPS connectivity, ha</p>
-    <div class="card-footer">
-        <span>theverge</span>
-        <span>2026-11-23T16:36</span>
     </div>
 </div>
 
