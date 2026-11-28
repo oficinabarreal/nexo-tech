@@ -8,7 +8,7 @@ Un sitio de noticias y artículos tech donde Hermes (big-pickle) actúa como cur
 1. Fetch de noticias de múltiples fuentes (RSS)
 2. Filtrado por relevancia y tendencia (NVIDIA GLM-5.1)
 3. Generación de resúmenes con ángulo original
-4. Visualizaciones interactivas (Chart.js + SVG)
+4. Compilación a HTML estático con visualizaciones (Chart.js + SVG)
 5. Publicación automática en GitHub Pages
 
 ## Nichos
@@ -33,35 +33,31 @@ Un sitio de noticias y artículos tech donde Hermes (big-pickle) actúa como cur
 ```
 nexo-tech/
 ├── scripts/
-│   ├── fetch_news.py      # Fetch de RSS feeds
-│   ├── filter_news.py     # Filtrado IA + scoring
-│   ├── generate_post.py   # Generación de artículo
-│   └── build_site.py      # Generador estático
-├── content/               # Artículos generados
-├── templates/             # HTML templates
-├── assets/
-│   ├── css/               # Estilos
-│   ├── js/                # Chart.js, interactivos
-│   └── img/               # Imágenes generadas
+│   ├── fetch_news.py      # Fetch de RSS feeds → content/raw_news.json
+│   ├── filter_news.py     # Filtrado IA + scoring → content/curated_news.json
+│   └── build_site.py      # Generador estático → docs/
+├── content/               # JSON de noticias (crudas y curadas)
+├── docs/
+│   ├── index.html         # Homepage publicado en GitHub Pages
+│   └── articles/          # Artículos generados
+├── assets/css/             # Estilos
 ├── .github/workflows/
 │   └── daily-post.yml     # Pipeline diario
-└── index.html             # Homepage
+└── FLUJO_DIARIO.md        # Documentación del flujo
 ```
 
 ## Flujo diario
 
 ```
-06:00 UTC — GitHub Actions se dispara
+12:00 UTC (09:00 ART) — GitHub Actions se dispara
     ↓
-fetch_news.py — Lee 10+ RSS feeds
+fetch_news.py — Lee 10+ RSS feeds → content/raw_news.json
     ↓
-filter_news.py — IA clasifica y rankea (top 5)
+filter_news.py — IA clasifica y rankea (top 5) → content/curated_news.json
     ↓
-generate_post.py — Redacta artículo + gráfico
+build_site.py — Genera HTML estático en docs/
     ↓
-build_site.py — Genera HTML estático
-    ↓
-git push — Deploy automático a GitHub Pages
+Deploy a GitHub Pages (peaceiris/actions-gh-pages)
 ```
 
 ## Monetización
